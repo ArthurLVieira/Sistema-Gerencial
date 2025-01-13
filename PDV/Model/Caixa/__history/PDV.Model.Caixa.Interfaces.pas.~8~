@@ -27,9 +27,7 @@ type
   iModelCaixaMetodosFechar = interface
     ['{99477BB7-A152-499E-A0ED-F4FC0A08A5C7}']
     function SetValorFechamento(Value: Currency): iModelCaixaMetodosFechar;
-    function SetOperadorFechamento: iModelCaixaMetodosFechar;
-    function SetOperadorCaixa: iModelCaixaMetodosFechar;
-    function &End: iModelCaixaMetodos;
+    function Set
   end;
 
 implementation

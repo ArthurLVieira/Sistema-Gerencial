@@ -1,0 +1,13 @@
+unit PDV.Model.Usuario.Interfaces;
+
+interface
+
+type
+
+  iModelUsuario = interface
+    ['{E712E7C7-929E-4CC3-BD55-DB3EE563012F}']
+  end;
+
+implementation
+
+end.

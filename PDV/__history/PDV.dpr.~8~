@@ -10,15 +10,12 @@ uses
   PDV.Model in 'Model\PDV.Model.pas',
   PDV.Model.Usuario.Interfaces in 'Model\Usuario\PDV.Model.Usuario.Interfaces.pas',
   PDV.Model.Usuario.Tipos.Interfaces in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Interfaces.pas',
-  PDV.Model.Usuario.Tipos.Caixa in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Caixa.pas',
-  PDV.Controller.Dialog.Interfaces in 'Controller\Dialog\PDV.Controller.Dialog.Interfaces.pas',
-  PDV.View.Dialog.PedirSenha in 'View\Dialog\PDV.View.Dialog.PedirSenha.pas' {Form2};
+  PDV.Model.Usuario.Tipos.Caixa in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Caixa.pas';
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.CreateForm(TForm1, Form1);
-  Application.CreateForm(TForm2, Form2);
   Application.Run;
 end.

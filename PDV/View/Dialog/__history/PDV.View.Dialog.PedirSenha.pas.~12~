@@ -54,6 +54,9 @@ var
 
 implementation
 
+uses
+  FMX.Types;
+
 {$R *.fmx}
 { TForm2 }
 

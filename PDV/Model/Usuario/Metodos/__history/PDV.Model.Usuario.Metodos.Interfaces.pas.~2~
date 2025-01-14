@@ -1,0 +1,15 @@
+unit PDV.Model.Usuario.Metodos.Interfaces;
+
+interface
+
+type
+
+  iModelUsuarioMetodos = interface
+    ['{ED6E207E-99FB-4C07-8384-BF24D27CF5C5}']
+    function LoginCaixa: iModelCaixaMetodosAbrir;
+    function FecharCaixa: iModelCaixaMetodosFechar;
+  end;
+
+implementation
+
+end.

@@ -1,0 +1,25 @@
+unit PDV.Controller.Dialog.Interfaces;
+
+interface
+
+uses
+  System.Classes;
+
+type
+
+  iControllerDialogPedirSenha = interface
+    ['{A691DF78-A530-46F5-85A3-5DB8F9B5DA3A}']
+    function Text(Title, TextConfirm, TextCancel, TextConfirmSenha: string)
+      : iControllerDialogPedirSenha;
+    function Visible(VisibleTextConfirmSenha, VisibleImage: Boolean)
+      : iControllerDialogPedirSenha;
+    function onClick(ButtonConfirm, ButtonCancel: TNotifyEvent)
+
+      Procedure ExibeForm(Title, TextConfirm, TextCancel, TextConfirmSenha
+      : string; VisibleTextConfirmSenha, VisibleImage: Boolean;
+      ButtonConfirm, ButtonCancel: TNotifyEvent);
+  end;
+
+implementation
+
+end.

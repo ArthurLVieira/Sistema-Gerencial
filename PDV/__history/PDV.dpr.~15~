@@ -15,8 +15,7 @@ uses
   PDV.View.Dialog.PedirSenha in 'View\Dialog\PDV.View.Dialog.PedirSenha.pas' {FrmPedirSenha},
   PDV.Controller.Dialog.PedirSnha.Interfaces in 'Controller\Dialog\PedirSenha\PDV.Controller.Dialog.PedirSnha.Interfaces.pas',
   PDV.Controller.Dialog.PedirSnha in 'Controller\Dialog\PedirSenha\PDV.Controller.Dialog.PedirSnha.pas',
-  PDV.Controller.Forms in 'Controller\Forms\PDV.Controller.Forms.pas',
-  PDV.Model.Usuario.Metodos.Interfaces in 'Model\Usuario\Metodos\PDV.Model.Usuario.Metodos.Interfaces.pas';
+  PDV.Controller.Forms in 'Controller\Forms\PDV.Controller.Forms.pas';
 
 {$R *.res}
 

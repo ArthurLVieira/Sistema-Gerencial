@@ -1,0 +1,13 @@
+unit PDV.Controller.Forms;
+
+interface
+
+type
+
+  TContrllerForms = class
+    class procedure CreateForm(ClassName: string);
+  end;
+
+implementation
+
+end.

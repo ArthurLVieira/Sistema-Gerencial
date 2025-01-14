@@ -2,28 +2,37 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2025/01/10 14:31:57.000.769,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2025/01/10 14:35:28.000.109,C:\Users\user\Documents\GitHub\Sistema Genrencial\PDV\View\PDV.View.Principal.fmx=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
-    <Transaction>2025/01/10 14:35:28.000.109,C:\Users\user\Documents\GitHub\Sistema Genrencial\PDV\View\PDV.View.Principal.pas=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2025/01/10 14:35:46.000.635,C:\Users\user\Documents\GitHub\Sistema Genrencial\PDV\PDV.dproj=C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2025/01/10 14:35:28.000.109,C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\user\Documents\GitHub\Sistema Genrencial\PDV\View\PDV.View.Principal.fmx</Transaction>
+    <Transaction>2025/01/10 14:35:28.000.109,C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\user\Documents\GitHub\Sistema Genrencial\PDV\View\PDV.View.Principal.pas</Transaction>
+    <Transaction>2025/01/10 14:35:46.000.635,C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\user\Documents\GitHub\Sistema Genrencial\PDV\PDV.dproj</Transaction>
     <Transaction>2025/01/10 14:48:40.000.708,=C:\Users\user\Documents\GitHub\Sistema Genrencial\PDV\Unit1.pas</Transaction>
-    <Transaction>2025/01/10 14:49:32.000.937,C:\Users\user\Documents\GitHub\Sistema Genrencial\PDV\Model\Caixa\PDV.Model.Caixa.Interfaces.pas=C:\Users\user\Documents\GitHub\Sistema Genrencial\PDV\Unit1.pas</Transaction>
+    <Transaction>2025/01/10 14:49:32.000.937,C:\Users\user\Documents\GitHub\Sistema Genrencial\PDV\Unit1.pas=C:\Users\user\Documents\GitHub\Sistema Genrencial\PDV\Model\Caixa\PDV.Model.Caixa.Interfaces.pas</Transaction>
     <Transaction>2025/01/10 14:49:40.000.670,=C:\Users\user\Documents\GitHub\Sistema Genrencial\PDV\Unit1.pas</Transaction>
-    <Transaction>2025/01/10 14:50:01.000.374,C:\Users\user\Documents\GitHub\Sistema Genrencial\PDV\Model\Caixa\PDV.Model.Caixa.pas=C:\Users\user\Documents\GitHub\Sistema Genrencial\PDV\Unit1.pas</Transaction>
+    <Transaction>2025/01/10 14:50:01.000.374,C:\Users\user\Documents\GitHub\Sistema Genrencial\PDV\Unit1.pas=C:\Users\user\Documents\GitHub\Sistema Genrencial\PDV\Model\Caixa\PDV.Model.Caixa.pas</Transaction>
     <Transaction>2025/01/11 00:48:43.000.567,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
-    <Transaction>2025/01/11 00:49:21.000.040,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV.Model.Interfaces.pas</Transaction>
+    <Transaction>2025/01/11 00:49:21.000.040,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV.Model.Interfaces.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
     <Transaction>2025/01/11 00:49:26.000.622,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
-    <Transaction>2025/01/11 00:50:13.000.516,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV.Model.Interfaces.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\PDV.Model.Interfaces.pas</Transaction>
-    <Transaction>2025/01/11 00:50:39.000.869,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\PDV.Model.pas</Transaction>
+    <Transaction>2025/01/11 00:50:13.000.516,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\PDV.Model.Interfaces.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV.Model.Interfaces.pas</Transaction>
+    <Transaction>2025/01/11 00:50:39.000.869,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\PDV.Model.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
     <Transaction>2025/01/11 00:50:56.000.253,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
-    <Transaction>2025/01/11 00:51:14.000.140,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\PDV.Model.Usuario.Interfaces.pas</Transaction>
+    <Transaction>2025/01/11 00:51:14.000.140,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\PDV.Model.Usuario.Interfaces.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
     <Transaction>2025/01/11 01:06:54.000.504,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
-    <Transaction>2025/01/11 01:07:22.000.964,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Interfaces.pas</Transaction>
-    <Transaction>2025/01/11 13:29:58.227,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
-    <Transaction>2025/01/11 13:31:44.408,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Caixa.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
-    <Transaction>2025/01/11 13:36:57.117,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
-    <Transaction>2025/01/11 13:37:45.895,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Controller\Dialog\PDV.Controller.Dialog.Interfaces.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
-    <Transaction>2025/01/11 13:40:11.291,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit2.pas</Transaction>
-    <Transaction>2025/01/11 13:40:42.703,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\View\Dialog\PDV.View.Dialog.PedirSenha.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit2.pas</Transaction>
-    <Transaction>2025/01/11 13:40:42.703,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\View\Dialog\PDV.View.Dialog.PedirSenha.fmx=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit2.fmx</Transaction>
+    <Transaction>2025/01/11 01:07:22.000.964,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Interfaces.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
+    <Transaction>2025/01/11 13:29:58.000.227,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
+    <Transaction>2025/01/11 13:31:44.000.408,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Caixa.pas</Transaction>
+    <Transaction>2025/01/11 13:36:57.000.117,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
+    <Transaction>2025/01/11 13:37:45.000.895,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Controller\Dialog\PDV.Controller.Dialog.Interfaces.pas</Transaction>
+    <Transaction>2025/01/11 13:40:11.000.291,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit2.pas</Transaction>
+    <Transaction>2025/01/11 13:40:42.000.703,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit2.fmx=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\View\Dialog\PDV.View.Dialog.PedirSenha.fmx</Transaction>
+    <Transaction>2025/01/11 13:40:42.000.703,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit2.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\View\Dialog\PDV.View.Dialog.PedirSenha.pas</Transaction>
+    <Transaction>2025/01/13 16:00:40.222,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
+    <Transaction>2025/01/13 16:01:32.266,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Controller\Dialog\PedirSenha\PDV.Controller.Dialog.PedirSnha.Interfaces.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
+    <Transaction>2025/01/13 16:11:23.803,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
+    <Transaction>2025/01/13 16:11:40.242,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Controller\Dialog\PedirSenha\PDV.Controller.Dialog.PedirSnha.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
+    <Transaction>2025/01/13 16:19:44.789,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
+    <Transaction>2025/01/13 16:20:27.398,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Controller\Forms\PDV.Controller.Forms.Interfaces.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
+    <Transaction>2025/01/13 16:21:22.552,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Controller\Forms\PDV.Controller.Forms.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Controller\Forms\PDV.Controller.Forms.Interfaces.pas</Transaction>
+    <Transaction>2025/01/14 10:23:43.962,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
+    <Transaction>2025/01/14 10:24:08.059,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\Metodos\PDV.Model.Usuario.Metodos.Interfaces.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>

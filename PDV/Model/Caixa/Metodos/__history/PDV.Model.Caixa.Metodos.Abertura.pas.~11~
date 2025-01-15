@@ -14,9 +14,9 @@ type
     FParent: iModelCaixa;
     FOperador: imodelUsuario;
   public
-    constructor Create(Parent: iModelCaixa);
+    constructor Create;
     destructor Destroy; override;
-    class function New(Parent: iModelCaixa): iModelCaixaMetodosAbertura;
+    class function New: iModelCaixaMetodosAbertura;
     function SetValorAbertura(Value: Currency): iModelCaixaMetodosAbertura;
     function SetOperadorAbertura(Value: imodelUsuario)
       : iModelCaixaMetodosAbertura;
@@ -27,9 +27,9 @@ implementation
 
 { TModelCaixaMetodosAbertura }
 
-constructor TModelCaixaMetodosAbertura.Create(Parent: iModelCaixa);
+constructor TModelCaixaMetodosAbertura.Create;
 begin
-  FParent := Parent;
+
 end;
 
 destructor TModelCaixaMetodosAbertura.Destroy;
@@ -38,10 +38,9 @@ begin
   inherited;
 end;
 
-class function TModelCaixaMetodosAbertura.New(Parent: iModelCaixa)
-  : iModelCaixaMetodosAbertura;
+class function TModelCaixaMetodosAbertura.New: iModelCaixaMetodosAbertura;
 begin
-  Result := Self.Create(Parent);
+  Result := Self.Create;
 end;
 
 end.

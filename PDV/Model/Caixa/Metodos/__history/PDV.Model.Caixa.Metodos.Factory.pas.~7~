@@ -20,15 +20,12 @@ type
 
 implementation
 
-uses
-  PDV.Model.Caixa.Metodos.Abertura;
-
 { TModelCaixaMetodosFactory }
 
 function TModelCaixaMetodosFactory.Abertura(Parent: iModelCaixa)
   : iModelCaixaMetodosAbertura;
 begin
-  TModelCaixaMetodosAbertura.New(Parent);
+
 end;
 
 constructor TModelCaixaMetodosFactory.Create;

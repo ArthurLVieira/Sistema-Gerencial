@@ -34,7 +34,7 @@ uses
 
 function TModelCaixa.Abertura: iModelCaixaMetodosAbertura;
 begin
-  FMetodosFactory.Abertura(Self);
+
 end;
 
 function TModelCaixa.Bloquear: iModelCaixaMetodosBloquear;
@@ -49,7 +49,7 @@ end;
 
 constructor TModelCaixa.Create;
 begin
-  FMetodosFactory := TModelCaixaMetodosFactory.New;
+
 end;
 
 function TModelCaixa.Desbloquear: iModelCaixaMetodosDesbloquear;

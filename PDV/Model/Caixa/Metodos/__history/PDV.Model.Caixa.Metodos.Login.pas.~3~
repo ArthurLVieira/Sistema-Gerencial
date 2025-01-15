@@ -1,0 +1,39 @@
+unit PDV.Model.Caixa.Metodos.Login;
+
+interface
+
+uses
+  PDV.Model.Usuario.Metodos.Interfaces, PDV.Model.Caixa.Interfaces;
+
+type
+
+  TModelCaixaMetodosLogin = class(TInterfacedObject, iModelCaixaMetodosLogin)
+  private
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: iModelCaixaMetodosLogin;
+  end;
+
+implementation
+
+{ TModelCaixaMetodosLogin }
+
+constructor TModelCaixaMetodosLogin.Create;
+begin
+
+end;
+
+destructor TModelCaixaMetodosLogin.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelCaixaMetodosLogin.New: iModelCaixaMetodosLogin;
+begin
+  Result := Self.Create;
+end;
+
+end.

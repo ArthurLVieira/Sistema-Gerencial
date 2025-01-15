@@ -299,6 +299,7 @@
         <DCCReference Include="Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Intefaces.pas"/>
         <DCCReference Include="Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Factory.pas"/>
         <DCCReference Include="Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Abertura.pas"/>
+        <DCCReference Include="Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Login.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

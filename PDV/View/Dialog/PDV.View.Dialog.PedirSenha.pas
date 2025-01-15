@@ -61,14 +61,12 @@ procedure TFrmPedirSenha.ExibeForm(Title, TextConfirm, TextCancel,
   TextConfirmSenha: string; VisibleTextConfirmSenha, VisibleImage: Boolean;
   ButtonConfirm, ButtonCancel: TNotifyEvent);
 begin
-  ShowModal;
   LblTitle.Text := Title;
   BtnConfirm.Text := TextConfirm;
   BtnCancel.Text := TextCancel;
   LblConfimSenha.Text := TextConfirmSenha;
   LblConfimSenha.Visible := VisibleTextConfirmSenha;
   Layout9.Visible := VisibleImage;
-
   BtnConfirm.OnClick := ButtonConfirm;
   BtnCancel.OnClick := ButtonCancel;
 end;

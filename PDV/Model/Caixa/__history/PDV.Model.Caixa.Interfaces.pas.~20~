@@ -1,0 +1,19 @@
+unit PDV.Model.Caixa.Interfaces;
+
+interface
+
+uses
+  PDV.Model.Caixa.State.Interfaces,
+  PDV.Model.Caixa.Metodos.Intefaces;
+
+type
+
+  iModelCaixa = interface
+    ['{6F122064-B8C2-475B-9EC7-CC411CDB7829}']
+    function Metodos(Value: iModelCaixaState): iModelCaixaMetodos;
+    function State: iModelCaixaState;
+  end;
+
+implementation
+
+end.

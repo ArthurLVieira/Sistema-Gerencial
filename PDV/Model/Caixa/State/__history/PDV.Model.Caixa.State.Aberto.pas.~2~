@@ -1,0 +1,39 @@
+unit PDV.Model.Caixa.State.Aberto;
+
+interface
+
+uses
+  PDV.Model.Caixa;
+
+type
+
+  TModelCaixaStateAberto = class(TInterfacedObject, iModelCaixaMetodos)
+  private
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: iModelCaixaMetodos;
+  end;
+
+implementation
+
+{ TModelCaixaStateAberto }
+
+constructor TModelCaixaStateAberto.Create;
+begin
+
+end;
+
+destructor TModelCaixaStateAberto.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelCaixaStateAberto.New: iModelCaixaMetodos;
+begin
+  Result := Self.Create;
+end;
+
+end.

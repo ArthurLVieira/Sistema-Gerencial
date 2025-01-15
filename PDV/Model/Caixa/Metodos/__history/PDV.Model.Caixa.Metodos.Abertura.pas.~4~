@@ -1,0 +1,46 @@
+unit PDV.Model.Caixa.Metodos.Abertura;
+
+interface
+
+uses
+  PDV.Model.Caixa.Interfaces;
+
+type
+
+  TModelCaixaMetodosAbertura = class(TInterfacedObject,
+    iModelCaixaMetodosAbertura)
+  private
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: iModelCaixaMetodosAbertura;
+    function SetValorAbertura(Value: Currency): iModelCaixaMetodosAbertura;
+    function SetOperadorAbertura: iModelCaixaMetodosAbertura;
+    function SetOperadorCaixa: iModelCaixaMetodosAbertura;
+    function &End: iModelCaixaMetodos;
+  end;
+
+implementation
+
+{ TModelCaixaMetodosAbertura }
+
+constructor TModelCaixaMetodosAbertura.Create;
+begin
+
+end;
+
+destructor TModelCaixaMetodosAbertura.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelCaixaMetodosAbertura.New: iModelCaixaMetodosAbertura;
+begin
+  Result := Self.Create;
+end;
+
+end.
+
+  end.

@@ -1,0 +1,429 @@
+object FrmPedirSenha: TFrmPedirSenha
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 563
+  ClientWidth = 795
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Contents
+    Size.Width = 795.000000000000000000
+    Size.Height = 563.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Layout2: TLayout
+      Align = Contents
+      Size.Width = 795.000000000000000000
+      Size.Height = 563.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Layout3: TLayout
+        Align = Top
+        Size.Width = 795.000000000000000000
+        Size.Height = 113.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Rectangle1: TRectangle
+          Align = Contents
+          Fill.Color = xFF494A4A
+          Size.Width = 795.000000000000000000
+          Size.Height = 113.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+        object Layout8: TLayout
+          Align = Left
+          Size.Width = 225.000000000000000000
+          Size.Height = 113.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Image1: TImage
+            MultiResBitmap.Height = 73
+            MultiResBitmap.Width = 121
+            MultiResBitmap = <
+              item
+                Width = 121
+                Height = 73
+                PNG = {
+                  89504E470D0A1A0A0000000D4948445200000079000000490806000000198089
+                  E4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  0FCD49444154785EED9D0B7454C519C767EEEE2690A414C517F8AA8A0745A41C
+                  1114218BE0239B00250915C46A0B16EBC1779572D082542DAD56452B621515AB
+                  1E2C2024011B92F800090FE561011514952A280852AAD83C48B23BD3FF373B7B
+                  DD65EFBDBB4B12D870EEEF9C8FF9E679EFCC37337766EEDDC0592B3370D1955D
+                  99F0F6DBDB943D6FCBC8571B75B0CB61C4D06E8B33F8B52127FB4BF31F680C7A
+                  3606B99CB16573F7A08E7239CCB4F848EEB7F08A133C1ECF4483D5DFCA585606
+                  8509C9D6AD2CAAE8AB12B81C765A742463E4DEE36B909F198CDF153130C1A568
+                  F5C7828B3D2D62E4DCD2BCBCFE65795B302F4C6359BE1FE9609734A17946968C
+                  E796E53FC5B951E961C6B93AD425CD3864230F2C2DE8D57F51DE66CCC3E37590
+                  2DE804ADB6C07349CC2135BEBF2CFF9792CB0D498F5ECE4ED19ACB11206523FB
+                  CB0253E1BC18F625C526C645C2D1EED27AA4B4EAC5F3772632DCA4BD8E8826B9
+                  C7F0B27BAB8B2A67E920972344D246CE2DCD7F9E7376BDF63A23E54CDE543F69
+                  F9C8E5353AC4E508929491FDA58119583DDDA2BDB64811DA8927C0F52B8A2B5F
+                  D7412E6940C26772EEA2FCBB933130B653E546B0E11CD7C0E987E3481E50923F
+                  149B9FD7B4D716C1E4A32B0B2B2768AF4B9A616BE481FF2C3849066B31FD6639
+                  8F76C9265417553CAA7D2E6988AD0165A3AC4A6860266E770D9CFE581A31B72C
+                  3009313DB5D70639B5BAB0EA09ED714963E2A66B7A55E8F378F768AF3592CDC1
+                  08BE56FB5CD29CB891ECE1DE67B56A4D887DEE1AB86D1163E4810B87F4C06AFA
+                  67DA6B89E02CA0559736428C9105178F69D51229D9B495C5159F68AF4B1BC17C
+                  26FB5F1B72360B0927037E535D5871A2D65DDA103F8CE490B84B6B76FC4EBB2E
+                  6D8CB091A74E35585DD3354AB780DE286114BFA4BD2E6D0C65647FAF3501A76F
+                  B3B88F3DAE5597368832B2E4EC6AE5B34136B0E7B5EAD2065146E64DFC32E5B3
+                  E6AD95A32AF76A5DD17DFE55E6E7B62EE98F31A02CD09DF95817EDB7402CD68A
+                  C971EDEB4ECF2DCD9B955B1AB8834EC87470AB21843817321272A394720CDC81
+                  707374F4510DEA7A4928149A0B5906BDBF0E4E098333EED7BA254218955A35A9
+                  1E5AFE19E7FC5DC8630D8677BBBF2CFFE9C18B86B5F8F60A862C0C0683AB709D
+                  2D907990A711FC02DCB70F1C38B003152F45C57F0EE914CE7174817A75455D57
+                  1986310A7229828E0DC7A4064DD7E787554BBEB63CFCE04C561756CE9692DD90
+                  C3593B84DC08637C925B9A3F229CA0F9C080B3E1947A3C9E4BC221B1B46BD7EE
+                  1854BC108DF02A3AC3DD3AF8A802F532BFA7437BAC415DCBB5372530925957AD
+                  5BF1BE762D595154F19C646C9BF2785807CED9027F6920A90FFD9C40854A60C0
+                  B1DA4B3D7A292A7C3364086404FCF723CD7A1DCD50F9841F36B435504F0FEA59
+                  807A6E823E199DDD8F7A0A1D9D128608B133B51E8F605BB4668F640F6A2D0CE7
+                  33FD658122ED4B19546C320C6CE64705C7A0829721EC29C8124809FC53BD5E6F
+                  1FC45D89F4D351F96A9DFCA801753B16757C10D20B759E863A1EF2CF7E8D1063
+                  9DB51E87E47287566D69C894F3590D4C1D032FC95D98675BAE1D30582754E601
+                  ED25C6A282B6DF7823EE0D18FC2EE439E8FA6D1FD4691FE4EFDADB2C0C9F8765
+                  6B3D0E3C73FFA3555BD616547E2F72D84AED35E11EA34CAB49834ADDA0559AB2
+                  DF696E25311A7CE838FD21A3214590B374540C08EF0C19A5BD94EF34F8074128
+                  DFD5907E3ACA11A43B055200B90632181277C084B2691A3E4F7B294F26641864
+                  02E40EC45F0E41D5C35333C2CE475BCCA2342A8305FA7E23D70DC01F333B878F
+                  356D300CF9BD561DC1385AAAD568FAFA4B0A466A3D2970835768954669EC6320
+                  4550D6C4C6C6C6ED68AC959057202590CFD0608B1177F0CF760CC4CDC5E27113
+                  E2A92E946FA9CEF70FC8EAA6A6A67F53238693C782F0CEC83717E9BE849443E6
+                  40DE6A6868D88E38FAC5493408122F21FD1B706F45B95F20ED62C8C3107A0BF8
+                  06649D4E381A61EFA32DA8F377A4B06860CCDE2887166374BF91EB56C0BF0D75
+                  D980B8FB51C6198E46C6486ED0AA235C72CB67B70889A43F0FC20D67C028BD48
+                  AFA9A9C15384AD22FD50D00DFE504646867A64A0DC6F50E601D2D160C3D0F81F
+                  A0F2E6E30469115D538BA9BF27E207E9E018F06C3C831A11F98A759002FE5351
+                  DE66E4533301CA11743DD26907803C7FC0FDCC213F013F0DD35D487F39DC2770
+                  8F27E9281394F90EB988EFA602C2C4FC50016946C3598F720AC221B1A02EF42C
+                  9F0235C7D1C8DC30925ACD09836DD76A0C868F9F38705141521F19C0C827A351
+                  D43E30333373376E709F8A4812E4F7908BCA8F8B34381A7703C2FBA0214FCEC9
+                  C9E902FD5E0AC7753A22DD42D235C812AE2B1908E9EE84D0C1C3B970FB22ED5C
+                  8A23EAEBEB5F40984F7BE97A4BC8985A7F303B3BBB0BAE47D7EA81EBAFA57094
+                  4DD3A8F93800E69FD6C07EFF3B3874C8D317722DD22D40FA3B280EFE7A720F06
+                  697AA203BCA2BDE45F84B4C5908B2179F0FF1123791BDCE928EB036723E3C9AA
+                  5547046BFC327EF115262485B9154A407BEDAA91A5D584A0525741E8D9AD1A1E
+                  791F211795DC82D177012AB91E6141C8B7D06951F710C5A3A7F743BE01A44783
+                  3CEB90EE31C86AE4F918EE3AA41D0D83A929342B2BAB03F2A9BD3B1A3180B81E
+                  A423EC5EE87723FD1EE40BC1DD8CB22EC27D7C4EF170D57D4543A31E1D3A1FE9
+                  67D175207350C655945F27B16C535CF719AD92FE67E42944DE52C81AC8EBF04F
+                  F1F97C5DE1AAD7C7CED3350B6569D591D51BFAEF66392CE67C3B4228C4872473
+                  D68D8AFD57AB34028F43A3397630C467201DFD5A633EE457C87F0015FE29F41F
+                  533C2A4BCFD00084164E4A90873A84D981101639BC896E4C3ADC8903E5BDA055
+                  E254FA07655DA77C61F653F9D1D78304705FBB28128D4E8BB2B355CA1F6842FC
+                  BFB49E14B8C66930DEC5A4A3E37C0AFD1E15E180F34896866AB084DC771F4D75
+                  5F873DB1D0EAFDF88C9A049FF72A23EFC622444DFBE8DD9D509944BF69CE40C3
+                  AB851A2A1B3995334FEF10371465564068E1A404C1F3E19A5B345C439D05C38D
+                  7E2CD9FDE0207A11AAA65BE43B43F900CAFD2B1C2ADFBC1EA40246883E6F3E78
+                  95CE51464A47B248AF0C4CA08EA55A75843E16F89FD6E34081A9BC7CB0DD6E09
+                  29698425040DA2161C1ACB054514020B9EC8735B755634AA39F360946FC2C8A9
+                  B09172C81232824E9E0C5EED129167AA7A4460DA0DA2BCCAA8F2A36509445D0F
+                  49BFA4F4CDC4EC14B8FFDD5A75C460993E359D58C2B9D9531381B160BBDDC2B3
+                  DDE9E8D404376DFE9619A333E5F368744A7336412F7F049DA6C04686428640D4
+                  F606D74DB8F6409AE811AE0C8EA0FDCA075056BE2EFB60A1EBA8EBE19E96E9E4
+                  CDC16C675C3FA997428634A45A18588139ACBB5613C20D56ABD578388BDB2658
+                  418D8011F801E978869D0A9DA6404B50C13A4864811241AD66098C9C669FA13B
+                  1019D56A318695BB17D7330F725A19B38E180849BD10A21714E1170C16343171
+                  BEFAFE2B09B0A776385B95C769252130B4B9D5807E1B0C3D1D0D68AEBC2320AC
+                  332A19B34842FA3D48AFF6D71839FDA04F53110781BC37439AF3E64A8D6A5CEF
+                  6FCA076A6B6B67A04CF3791901B38B0FF7F130E22ED041CD02D7FC14E56D241D
+                  ABF7AED067A88883C075BD10F5CEDDC0CEFC43156A4126333AFA7BAFE9ADBD09
+                  10078FAA1F10B283D612824A7C849B1BA3BDE4FF2D9D0AA1322FA1A126238E0E
+                  174AB05FDD4ADB194A83BDA6798C07E38ED32AE5BD071D6135F2DD02A163CDF1
+                  C8FB26668027217F82DFF2E0235950C60E94A14EE6309A33E17F07E5CF4618AD
+                  AC8BA03F807BDF86FB9800B71CF76EB9724F159417DD3EB7A0DCF5B8DE44B8B4
+                  BA1F8BEBCEA4452CEABE1E61DC105CACD0E9AD112C5F6B878E447F4901DCF88B
+                  B8B95FD4D5D5A945614646C60908BB0E8D482BE3A9D08B6060F35C18BAF9A121
+                  D27C8CBCE63446231A61332074AC496FB2229F3AD1F354F5746A884879D02D5F
+                  CC233C7A1F6FEA289F6604F3250ACA1F8B785A59D3EBD2C9F4D8A170A4FB024E
+                  649A57BB16740CDA5ADACE94B866F47B05B383A05C7AFD3882F6D93AA837AE47
+                  FB7F5ADDCF46FC4DB86E178CF46E4877A7B16A78D566FAE4369C361EC96452AF
+                  0D51B8DDD60335A4A7426AE0465F69DFBE3D2DD8EE43CFFC1015321F07D06B11
+                  B616159802E986068CF9661C794B107E0ED417A356E00AF4EE4FD0DBEF87FA13
+                  A453EFA171EB21846F45EFDF05DDEE0706FB10BF930465C794893C6310460726
+                  AB716F4D3A98EE93F6EECB1077351A9C3A9BDAA3E3BA3B705F7BA92C786DFFB0
+                  2CD2D3B672974EF76D38340CD5313B3BBB1BCA7F86D2E8E008FBE95E70DDC9D0
+                  97AAC6F797E5CD45B6E863B718824C9CB3BAB06AABF65AE22F0B3C8BDB32A7CA
+                  1842624DF588AAB8E7552AA032B492A45146BD772F2A691E9E38818A66414E47
+                  83D16CF21D5C1A5196201DBDA888DE33C78078D55E4863FB6A13694E82D0BDAA
+                  336A48DCD612F1B4F5A2153D5D8B0E449CCAA3914E6539A5F140E86C3D072E1D
+                  85D2D9B8B935565385607C81F2D9E061C66D5A3D62E0A6F7403E826C4DD6C004
+                  2A5E47F9E06E84D81A9840BCAD8109C43B363681783A77DF04791FBAE5D901C2
+                  C9B007208D9044E58924D2D0312A7D77B7112EB54FCCD9873272B021A79CB13A
+                  DBD5716D0DFB4DEFC543933AE274493F9491DF1DB5A01EB3DA221562414E0EF3
+                  6689E0EFB5D7A58D11B5B2E38E3F85E1AC7ED2C0D2E1712FAE93411A86E374E3
+                  D2BA98465E51B4647588898FB4D7822CECA91B5ED69E94C0BA3BAA33B91C6E62
+                  1A1FCBBD495AB5810F3DB46FAB9D5F1BBAB42E3146AE2EAC5A8CFD8EE35F12A8
+                  E535F306CC0B1CAFBD49218574A7EB2348DC34CA85F16BAD5A92C3723C2CD3F2
+                  C33D973425CEC8CB8B2B574A261CDFB31A8CF7F0970652FEE4D6E5C860B92032
+                  643BDBBF3A60C2F9F0F029974672F3E33697F4C2D2C8CB8B167DC7B94CE29B69
+                  3E8EFEA311ED6989AF1E5C5A014B2313CB8757BE0A27E15F18E08C8DC788BE5F
+                  32E99E88A529B64626AA0B2BC68504DBA0BD0EF0299CF33BB5C725CD703432E1
+                  0DD6D18FD42DBFC474691B243432FD3F125E8FD1A78109FAD2DFA50D92D0C8C4
+                  D261E53BB304BF503096D24F575CD283A48C4C2C2BAEDCE609C95E41293FD541
+                  2E6D84A48D4C2C1F51F995AF637D4F29D89B3AC8A50D90929189E583961F5851
+                  5C7105B64C7FD1412E694ECA1FD845E32F0D14B0207FD6F9EF80D10B0AB17E45
+                  71551FD2973DF964CE5746430F2314E242646EBEEEF6DB93FAA1BBCBA193F248
+                  8EA6BAA872099775DD9894F4F7B56CA9F3863F602C9931A3D37E21C67B84CCE3
+                  8C5FEAF534DEF8F2D3D353FEDB222EA9D12C2313B4C582B1C74BC9FB4BC6DED6
+                  C131D4B1B091B31ABD6741FF9A4BF5FD7107FACB333E214F57912EAD46B38D1C
+                  81BE2C595158314848560463C7FCA118C323D45790069386F488FD8CCB63E86B
+                  11CEE55A218FCEBFA6974EB4989123AC2CAA2883B17325A664C6847A1D997940
+                  9CC724E3DFFA6AF764843C83D1095E16DC5882A0D19E20B3FDC19D4BCBD0AC85
+                  57320C282BB888097141FD697B9F7BEFC2F79AAA1E7FAAC73E4FDD995CCA26E9
+                  913BAFB979A2E35FFD73692E8CFD1F614555D7CF013F340000000049454E44AE
+                  426082}
+                FileName = 
+                  'C:\Users\thuli\Desktop\DU\Modulo 8\PSD\Nova pasta\PDV_0001_Gener' +
+                  'ic-Logo-Horizontal-FA-01.png'
+              end>
+            Align = Client
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Size.Width = 205.000000000000000000
+            Size.Height = 93.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object LblTitle: TLabel
+          Align = Right
+          AutoSize = True
+          StyledSettings = [Family, Style]
+          Margins.Right = 15.000000000000000000
+          Position.X = 225.000000000000000000
+          Size.Width = 555.000000000000000000
+          Size.Height = 113.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 50.000000000000000000
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Trailing
+          Text = 'TITLE USUARIO'
+          TabOrder = 2
+        end
+      end
+      object Layout4: TLayout
+        Align = Client
+        Size.Width = 795.000000000000000000
+        Size.Height = 450.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Rectangle2: TRectangle
+          Align = Contents
+          Fill.Color = xFFE3E3E3
+          Size.Width = 795.000000000000000000
+          Size.Height = 450.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+        object Layout5: TLayout
+          Align = Left
+          Size.Width = 369.000000000000000000
+          Size.Height = 450.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Layout6: TLayout
+            Align = Client
+            Margins.Left = 30.000000000000000000
+            Margins.Top = 30.000000000000000000
+            Margins.Right = 30.000000000000000000
+            Margins.Bottom = 60.000000000000000000
+            Size.Width = 309.000000000000000000
+            Size.Height = 360.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object Rectangle3: TRectangle
+              Align = Contents
+              Fill.Color = claWhite
+              Size.Width = 309.000000000000000000
+              Size.Height = 360.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Label6: TLabel
+                Anchors = [akLeft, akBottom]
+                StyledSettings = []
+                Position.X = 32.000000000000000000
+                Position.Y = 158.000000000000000000
+                Size.Width = 244.000000000000000000
+                Size.Height = 33.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Segoe UI Historic'
+                TextSettings.Font.Size = 18.000000000000000000
+                TextSettings.FontColor = xFF494A4A
+                Text = 'Senha:'
+                TabOrder = 4
+              end
+              object ComboBox1: TComboBox
+                Anchors = [akLeft]
+                ClipChildren = True
+                Hint = 'Selecione...'
+                Items.Strings = (
+                  ''
+                  '')
+                Placement = Absolute
+                Position.X = 32.000000000000000000
+                Position.Y = 106.000000000000000000
+                Size.Width = 244.000000000000000000
+                Size.Height = 34.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 5
+              end
+              object LblConfimSenha: TLabel
+                Align = Bottom
+                StyledSettings = [Family]
+                Position.Y = 232.000000000000000000
+                Size.Width = 309.000000000000000000
+                Size.Height = 64.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 18.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                TextSettings.FontColor = claRed
+                TextSettings.HorzAlign = Center
+                Text = 'Senha Invalida!'
+                TabOrder = 6
+              end
+              object Layout10: TLayout
+                Align = Bottom
+                Position.Y = 296.000000000000000000
+                Size.Width = 309.000000000000000000
+                Size.Height = 64.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 7
+                object Layout11: TLayout
+                  Align = HorzCenter
+                  Position.X = 32.000000000000000000
+                  Size.Width = 244.000000000000000000
+                  Size.Height = 64.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 0
+                  object BtnConfirm: TButton
+                    Align = Left
+                    StyledSettings = [Family, Size, Style]
+                    Margins.Bottom = 20.000000000000000000
+                    Size.Width = 80.000000000000000000
+                    Size.Height = 44.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 1
+                    Text = 'BtnConfirm'
+                    TextSettings.FontColor = xFF494A4A
+                    TextSettings.Trimming = None
+                  end
+                  object BtnCancel: TButton
+                    Align = Right
+                    StyledSettings = [Family, Size, Style]
+                    Margins.Bottom = 20.000000000000000000
+                    Position.X = 164.000000000000000000
+                    Size.Width = 80.000000000000000000
+                    Size.Height = 44.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    Text = 'Button1'
+                    TextSettings.FontColor = xFF494A4A
+                    TextSettings.Trimming = None
+                  end
+                end
+              end
+            end
+            object ShadowEffect1: TShadowEffect
+              Distance = 3.000000000000000000
+              Direction = 45.000000000000000000
+              Softness = 0.300000011920929000
+              Opacity = 0.200000002980232200
+              ShadowColor = claBlack
+            end
+            object Label1: TLabel
+              Align = Top
+              StyledSettings = []
+              Size.Width = 309.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Segoe UI Historic'
+              TextSettings.Font.Size = 22.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF494A4A
+              TextSettings.HorzAlign = Center
+              Text = 'LOGIN DE USUARIO'
+              TabOrder = 2
+            end
+            object edtQntProduto: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Anchors = [akLeft, akBottom]
+              TabOrder = 3
+              TextSettings.Font.Family = 'Segoe UI Historic'
+              TextSettings.Font.Size = 20.000000000000000000
+              TextSettings.FontColor = xFF494A4A
+              Position.X = 32.000000000000000000
+              Position.Y = 199.000000000000000000
+              Size.Width = 244.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = [Style]
+            end
+            object Label2: TLabel
+              Anchors = [akLeft, akBottom]
+              StyledSettings = []
+              Position.X = 32.000000000000000000
+              Position.Y = 65.000000000000000000
+              Size.Width = 244.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Segoe UI Historic'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.FontColor = xFF494A4A
+              Text = 'Selecione o  Usuario:'
+              TabOrder = 1
+            end
+          end
+        end
+        object Layout7: TLayout
+          Align = Client
+          Size.Width = 426.000000000000000000
+          Size.Height = 450.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Layout9: TLayout
+            Align = Client
+            Margins.Left = 30.000000000000000000
+            Margins.Top = 30.000000000000000000
+            Margins.Right = 30.000000000000000000
+            Margins.Bottom = 60.000000000000000000
+            Size.Width = 366.000000000000000000
+            Size.Height = 360.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object Rectangle4: TRectangle
+              Align = Contents
+              Fill.Color = claWhite
+              Size.Width = 366.000000000000000000
+              Size.Height = 360.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Image2: TImage
+                MultiResBitmap = <
+                  item
+                  end>
+                Align = Contents
+                Size.Width = 366.000000000000000000
+                Size.Height = 360.000000000000000000
+                Size.PlatformDefault = False
+              end
+            end
+            object ShadowEffect2: TShadowEffect
+              Distance = 3.000000000000000000
+              Direction = 45.000000000000000000
+              Softness = 0.300000011920929000
+              Opacity = 0.200000002980232200
+              ShadowColor = claBlack
+            end
+          end
+        end
+      end
+    end
+  end
+end

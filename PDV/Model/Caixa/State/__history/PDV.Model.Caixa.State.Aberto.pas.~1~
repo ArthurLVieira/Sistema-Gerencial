@@ -1,0 +1,7 @@
+unit PDV.Model.Caixa.State.Aberto;
+
+interface
+
+implementation
+
+end.

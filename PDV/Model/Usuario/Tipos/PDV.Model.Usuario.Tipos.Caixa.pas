@@ -3,7 +3,7 @@ unit PDV.Model.Usuario.Tipos.Caixa;
 interface
 
 uses
-  PDV.Model.Usuario.Interfaces;
+  PDV.Model.Usuario.Interfaces, PDV.Model.Usuario.Metodos.Interfaces;
 
 type
 

@@ -1,0 +1,43 @@
+unit PDV.Model.Caixa.Metodos;
+
+interface
+
+uses
+  PDV.Model.Caixa.Metodos.Intefaces, PDV.Model.Caixa.Interfaces;
+
+type
+
+  TModelCaixaMetodos = class(TInterfacedObject, iModelCaixaMetodos)
+  private
+    FParent: iModelCaixa;
+  public
+    constructor Create(Patent: iModelCaixa);
+    destructor Destroy; override;
+    class function New(Patent: iModelCaixa): iModelCaixaMetodos;
+    function Abrir: iModelCaixaMetodosAbrir;
+    function Fechar: iModelCaixaMetodosFechar;
+    function Bloquear: iModelCaixaMetodosBloquear;
+    function Desbloquear: iModelCaixaMetodosDesbloquear;
+  end;
+
+implementation
+
+{ TModelCaixaMetodos }
+
+constructor TModelCaixaMetodos.Create(Patent: iModelCaixa);
+begin
+  FParent := Patent;
+end;
+
+destructor TModelCaixaMetodos.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelCaixaMetodos.New(Patent: iModelCaixa): iModelCaixaMetodos;
+begin
+  Result := Self.Create(Parent);
+end;
+
+end.

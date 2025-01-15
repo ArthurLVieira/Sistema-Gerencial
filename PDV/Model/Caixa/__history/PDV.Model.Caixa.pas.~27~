@@ -1,0 +1,52 @@
+unit PDV.Model.Caixa;
+
+interface
+
+uses
+  PDV.Model.Caixa.Interfaces;
+
+type
+
+  TModelCaixa = class(TInterfacedObject, iModelCaixa, iModelCaixaMetodos)
+  private
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: iModelCaixa;
+    function Metodos: iModelCaixaMetodos;
+
+    { Metodos do Caixa }
+    function Abrir: iModelCaixaMetodosAbertura;
+    function Fechar: iModelCaixaMetodosFechamento;
+    function Bloquear: iModelCaixaMetodosBloquear;
+    function Desbloquear: iModelCaixaMetodosDesbloquear;
+    function &End: iModelCaixa;
+  end;
+
+implementation
+
+{ TModelCaixa }
+
+constructor TModelCaixa.Create;
+begin
+
+end;
+
+destructor TModelCaixa.Destroy;
+begin
+
+  inherited;
+end;
+
+function TModelCaixa.Metodos: iModelCaixaMetodos;
+begin
+  Result := Self;
+end;
+
+class function TModelCaixa.New: iModelCaixa;
+begin
+  Result := Self.Create;
+end;
+
+end.

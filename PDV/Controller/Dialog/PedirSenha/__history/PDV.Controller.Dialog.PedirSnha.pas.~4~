@@ -1,0 +1,47 @@
+unit PDV.Controller.Dialog.PedirSnha;
+
+interface
+
+uses
+  PDV.Controller.Dialog.PedirSnha.Interfaces, System.Classes;
+
+type
+
+  TControllerDialogPedirSenha = class(TInterfacedObject,
+    iControllerDialogPedirSenha)
+  private
+    FTitile, FTextConfirm, FTextCancel, FTextConfirmSenha: string;
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: iControllerDialogPedirSenha;
+    function Text(Title, TextConfirm, TextCancel, TextConfirmSenha: string)
+      : iControllerDialogPedirSenha;
+    function Visible(VisibleTextConfirmSenha, VisibleImage: Boolean)
+      : iControllerDialogPedirSenha;
+    function onClick(ButtonConfirm, ButtonCancel: TNotifyEvent)
+      : iControllerDialogPedirSenha;
+    procedure Exibir;
+  end;
+
+implementation
+
+{ TControllerDialogPedirSenha }
+
+constructor TControllerDialogPedirSenha.Create;
+begin
+
+end;
+
+destructor TControllerDialogPedirSenha.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TControllerDialogPedirSenha.New: iControllerDialogPedirSenha;
+begin
+  Result := Self.Create;
+end;
+
+end.

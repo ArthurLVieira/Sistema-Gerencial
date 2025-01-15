@@ -1,0 +1,57 @@
+unit PDV.Model.Caixa.Interfaces;
+
+interface
+
+uses
+  PDV.Model.Usuario.Interfaces, PDV.Model.Caixa.State.Interfaces;
+
+type
+  iModelCaixaMetodosAbrir = interface;
+  iModelCaixaMetodos = interface;
+  iModelCaixaMetodosFechar = interface;
+  iModelCaixaMetodosBloquearCaixa = interface;
+
+  iModelCaixa = interface
+    ['{6F122064-B8C2-475B-9EC7-CC411CDB7829}']
+    function Metodos(Value: iModelCaixaState): iModelCaixaMetodos;
+  end;
+
+  iModelCaixaMetodos = interface
+    ['{2923D137-0051-40F1-939C-E4EFA8440AF5}']
+    function Abrir: iModelCaixaMetodosAbrir;
+    function Fechar: iModelCaixaMetodosFechar;
+    function Bloquear: iModelCaixaMetodosBloquearCaixa;
+
+  end;
+
+  iModelCaixaMetodosAbrir = interface
+    ['{F920FE65-6A18-4D61-9CD0-466C52B2D05C}']
+    function SetValorAbertira(Value: Currency): iModelCaixaMetodosAbrir;
+    function SetOperadorAbertura: iModelCaixaMetodosAbrir;
+    function SetOperadorCaixa: iModelCaixaMetodosAbrir;
+    function &End: iModelCaixaMetodos;
+  end;
+
+  iModelCaixaMetodosFechar = interface
+    ['{99477BB7-A152-499E-A0ED-F4FC0A08A5C7}']
+    function SetValorFechamento(Value: Currency): iModelCaixaMetodosFechar;
+    function SetOperadorFechamento: iModelCaixaMetodosFechar;
+    function SetOperadorCaixa: iModelCaixaMetodosFechar;
+    function &End: iModelCaixaMetodos;
+  end;
+
+  iModelCaixaMetodosBloquearCaixa = interface
+    ['{561138A3-B8B0-4766-85AE-4950B73939B1}']
+    function SetOperador(Value: iModelUsuario): iModelCaixaMetodosBloquearCaixa;
+    function &End: iModelCaixaMetodosBloquearCaixa;
+  end;
+
+  iModelCaixaMetodosDesbloquearCaixa = interface
+    ['{60C3D491-EB4D-4F3D-9629-10AAFBFF122B}']
+    function SetOperador(Value: iModelUsuario)
+      : iModelCaixaMetodosDesbloquearCaixa;
+  end;
+
+implementation
+
+end.

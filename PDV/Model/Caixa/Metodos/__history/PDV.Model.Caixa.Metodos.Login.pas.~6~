@@ -13,7 +13,7 @@ type
   public
     constructor Create(Parent: iModelCaixa);
     destructor Destroy; override;
-    class function New(Parent: iModelCaixa): iModelCaixaMetodosLogin;
+    class function New: iModelCaixaMetodosLogin;
     function Usuario(Value: iModelUsuario): iModelCaixaMetodosLogin;
     function &End: iModelCaixa;
   end;
@@ -22,7 +22,7 @@ implementation
 
 { TModelCaixaMetodosLogin }
 
-constructor TModelCaixaMetodosLogin.Create(Parent: iModelCaixa);
+constructor TModelCaixaMetodosLogin.Create;
 begin
 
 end;
@@ -33,10 +33,9 @@ begin
   inherited;
 end;
 
-class function TModelCaixaMetodosLogin.New(Parent: iModelCaixa)
-  : iModelCaixaMetodosLogin;
+class function TModelCaixaMetodosLogin.New: iModelCaixaMetodosLogin;
 begin
-  Result := Self.Create(Parent);
+  Result := Self.Create;
 end;
 
 end.

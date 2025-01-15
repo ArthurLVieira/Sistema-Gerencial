@@ -36,7 +36,7 @@ end;
 class function TModelCaixaMetodosLogin.New(Parent: iModelCaixa)
   : iModelCaixaMetodosLogin;
 begin
-  Result := Self.Create(Parent);
+  Result := Self.Create;
 end;
 
 end.

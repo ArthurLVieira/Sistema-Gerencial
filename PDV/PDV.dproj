@@ -300,6 +300,8 @@
         <DCCReference Include="Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Factory.pas"/>
         <DCCReference Include="Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Abertura.pas"/>
         <DCCReference Include="Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Login.pas"/>
+        <DCCReference Include="Model\Caixa\State\PDV.Model.Caixa.State.Fechado.pas"/>
+        <DCCReference Include="Model\Caixa\State\PDV.Model.Caixa.State.Blqueado.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

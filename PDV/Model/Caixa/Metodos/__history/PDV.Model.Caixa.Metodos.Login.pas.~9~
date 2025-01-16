@@ -10,7 +10,6 @@ type
   TModelCaixaMetodosLogin = class(TInterfacedObject, iModelCaixaMetodosLogin)
   private
     FParent: iModelCaixa;
-    FUsuario: iModelUsuario;
   public
     constructor Create(Parent: iModelCaixa);
     destructor Destroy; override;
@@ -25,7 +24,7 @@ implementation
 
 function TModelCaixaMetodosLogin.&End: iModelCaixaMetodos;
 begin
-  Result := FParent.Metodos;
+
 end;
 
 constructor TModelCaixaMetodosLogin.Create(Parent: iModelCaixa);

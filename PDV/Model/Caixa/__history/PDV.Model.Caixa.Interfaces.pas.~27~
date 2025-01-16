@@ -31,22 +31,20 @@ type
   iModelCaixaMetodosLogin = interface
     ['{C03A3BE3-09C7-4673-A32A-BBF4B67BE7FE}']
     function Usuario(Value: iModelUsuario): iModelCaixaMetodosLogin;
-    function &End: iModelCaixaMetodos;
+    function &End: iModelCaixa;
   end;
 
   iModelCaixaMetodosAbertura = interface
     ['{F920FE65-6A18-4D61-9CD0-466C52B2D05C}']
     function SetValorAbertura(Value: Currency): iModelCaixaMetodosAbertura;
-    function SetOperadorAbertura(Value: iModelUsuario)
-      : iModelCaixaMetodosAbertura;
+    function SetOperadorAbertura(Value: iModelUsuario): iModelCaixaMetodosAbertura;
     function &End: iModelCaixaMetodos;
   end;
 
   iModelCaixaMetodosFechamento = interface
     ['{99477BB7-A152-499E-A0ED-F4FC0A08A5C7}']
     function SetValorFechamento(Value: Currency): iModelCaixaMetodosFechamento;
-    function SetOperadorFechamento(Value: iModelUsuario)
-      : iModelCaixaMetodosFechamento;
+    function SetOperadorFechamento(Value: iModelUsuario): iModelCaixaMetodosFechamento;
     function &End: iModelCaixaMetodos;
   end;
 

@@ -20,16 +20,16 @@ type
     function SetValorAbertura(Value: Currency): iModelCaixaMetodosAbertura;
     function SetOperadorAbertura(Value: imodelUsuario)
       : iModelCaixaMetodosAbertura;
-    function &End: iModelCaixaMetodos;
+    function &End: iModelCaixa;
   end;
 
 implementation
 
 { TModelCaixaMetodosAbertura }
 
-function TModelCaixaMetodosAbertura.&End: iModelCaixaMetodos;
+function TModelCaixaMetodosAbertura.&End: iModelCaixa;
 begin
-  Result := FParent.Metodos;
+  Result := FParent;
 end;
 
 constructor TModelCaixaMetodosAbertura.Create(Parent: iModelCaixa);

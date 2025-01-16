@@ -27,11 +27,6 @@ implementation
 
 { TModelCaixaMetodosAbertura }
 
-function TModelCaixaMetodosAbertura.&End: iModelCaixaMetodos;
-begin
-  Result := FParent.Metodos;
-end;
-
 constructor TModelCaixaMetodosAbertura.Create(Parent: iModelCaixa);
 begin
   FParent := Parent;
@@ -47,18 +42,6 @@ class function TModelCaixaMetodosAbertura.New(Parent: iModelCaixa)
   : iModelCaixaMetodosAbertura;
 begin
   Result := Self.Create(Parent);
-end;
-
-function TModelCaixaMetodosAbertura.SetOperadorAbertura(Value: imodelUsuario)
-  : iModelCaixaMetodosAbertura;
-begin
-
-end;
-
-function TModelCaixaMetodosAbertura.SetValorAbertura(Value: Currency)
-  : iModelCaixaMetodosAbertura;
-begin
-
 end;
 
 end.

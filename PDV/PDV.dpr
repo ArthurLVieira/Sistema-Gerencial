@@ -22,7 +22,9 @@ uses
   PDV.Model.Caixa.Metodos.Intefaces in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Intefaces.pas',
   PDV.Model.Caixa.Metodos.Factory in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Factory.pas',
   PDV.Model.Caixa.Metodos.Abertura in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Abertura.pas',
-  PDV.Model.Caixa.Metodos.Login in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Login.pas';
+  PDV.Model.Caixa.Metodos.Login in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Login.pas',
+  PDV.Model.Caixa.State.Fechado in 'Model\Caixa\State\PDV.Model.Caixa.State.Fechado.pas',
+  PDV.Model.Caixa.State.Blqueado in 'Model\Caixa\State\PDV.Model.Caixa.State.Blqueado.pas';
 
 {$R *.res}
 

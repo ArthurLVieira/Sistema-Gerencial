@@ -10,7 +10,6 @@ type
   TModelCaixa = class(TInterfacedObject, iModelCaixa, iModelCaixaMetodos)
   private
     FMetodosFactory: iModelCaixaMetodosFactory;
-    FState: iModelCaixaMetodos;
   public
     constructor Create;
     destructor Destroy; override;

@@ -22,7 +22,7 @@ type
 implementation
 
 uses
-  PDV.Model.Caixa.Metodos.Abertura, PDV.Model.Caixa.Metodos.Login;
+  PDV.Model.Caixa.Metodos.Abertura;
 
 { TModelCaixaMetodosFactory }
 
@@ -46,7 +46,7 @@ end;
 function TModelCaixaMetodosFactory.Login(Parent: iModelCaixa)
   : iModelCaixaMetodosLogin;
 begin
-  Result := TModelCaixaMetodosLogin.New(Parent);
+  Result :=
 end;
 
 class function TModelCaixaMetodosFactory.New: iModelCaixaMetodosFactory;

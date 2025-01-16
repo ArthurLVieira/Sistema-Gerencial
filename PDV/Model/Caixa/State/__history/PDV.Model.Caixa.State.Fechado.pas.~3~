@@ -1,0 +1,45 @@
+unit PDV.Model.Caixa.State.Fechado;
+
+interface
+
+uses
+  PDV.Model.Caixa.Interfaces;
+
+type
+
+  TModelCaixaStateFechado = class(TInterfacedObject, iModelCaixaMetodos)
+  private
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: iModelCaixaMetodos;
+    function Login: iModelCaixaMetodosLogin;
+    function Abertura: iModelCaixaMetodosAbertura;
+    function Fechamento: iModelCaixaMetodosFechamento;
+    function Bloquear: iModelCaixaMetodosBloquear;
+    function Desbloquear: iModelCaixaMetodosDesbloquear;
+    function &End: iModelCaixa;
+  end;
+
+implementation
+
+{ TModelCaixaStateFechado }
+
+constructor TModelCaixaStateFechado.Create;
+begin
+
+end;
+
+destructor TModelCaixaStateFechado.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelCaixaStateFechado.New: iModelCaixaMetodos;
+begin
+  Result := Self.Create;
+end;
+
+end.

@@ -15,7 +15,15 @@ uses
   PDV.View.Dialog.PedirSenha in 'View\Dialog\PDV.View.Dialog.PedirSenha.pas' {FrmPedirSenha},
   PDV.Controller.Dialog.PedirSnha.Interfaces in 'Controller\Dialog\PedirSenha\PDV.Controller.Dialog.PedirSnha.Interfaces.pas',
   PDV.Controller.Dialog.PedirSnha in 'Controller\Dialog\PedirSenha\PDV.Controller.Dialog.PedirSnha.pas',
-  PDV.Controller.Forms in 'Controller\Forms\PDV.Controller.Forms.pas';
+  PDV.Controller.Forms in 'Controller\Forms\PDV.Controller.Forms.pas',
+  PDV.Model.Usuario.Metodos.Interfaces in 'Model\Usuario\Metodos\PDV.Model.Usuario.Metodos.Interfaces.pas',
+  PDV.Model.Caixa.State.Interfaces in 'Model\Caixa\State\PDV.Model.Caixa.State.Interfaces.pas',
+  PDV.Model.Caixa.State.Aberto in 'Model\Caixa\State\PDV.Model.Caixa.State.Aberto.pas',
+  PDV.Model.Caixa.Metodos.Intefaces in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Intefaces.pas',
+  PDV.Model.Caixa.Metodos.Factory in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Factory.pas',
+  PDV.Model.Caixa.Metodos.Abertura in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Abertura.pas',
+  PDV.Model.Caixa.Metodos.Login in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Login.pas',
+  PDV.Model.Caixa.State.Fechado in 'Model\Caixa\State\PDV.Model.Caixa.State.Fechado.pas';
 
 {$R *.res}
 

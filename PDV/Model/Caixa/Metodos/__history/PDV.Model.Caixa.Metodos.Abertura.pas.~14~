@@ -29,7 +29,7 @@ implementation
 
 function TModelCaixaMetodosAbertura.&End: iModelCaixaMetodos;
 begin
-  Result := FParent.Metodos;
+
 end;
 
 constructor TModelCaixaMetodosAbertura.Create(Parent: iModelCaixa);

@@ -254,6 +254,8 @@
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
@@ -299,9 +301,18 @@
         <DCCReference Include="Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Intefaces.pas"/>
         <DCCReference Include="Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Factory.pas"/>
         <DCCReference Include="Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Abertura.pas"/>
-        <DCCReference Include="Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Login.pas"/>
         <DCCReference Include="Model\Caixa\State\PDV.Model.Caixa.State.Fechado.pas"/>
         <DCCReference Include="Model\Caixa\State\PDV.Model.Caixa.State.Blqueado.pas"/>
+        <DCCReference Include="Model\PDV\PDV.Model.PDV.Interfaces.pas"/>
+        <DCCReference Include="Model\PDV\PDV.Model.PDV.pas"/>
+        <DCCReference Include="Model\PDV\Metodos\PDV.Model.PDV.Metodos.Login.pas"/>
+        <DCCReference Include="Model\PDV\Metodos\PDV.Model.PDV.Metodos.Interfaces.pas"/>
+        <DCCReference Include="Model\PDV\Metodos\PDV.Model.PDV.Metodos.Factory.pas"/>
+        <DCCReference Include="View\Dialog\PDV.View.Dialog.CapturaValorAbertura.pas">
+            <Form>Form1</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Fechamento.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -322,6 +333,10 @@
                 <Source>
                     <Source Name="MainSource">PDV.dpr</Source>
                 </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k290.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp290.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="5">
                 <DeployFile LocalName="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib" Class="DependencyModule">

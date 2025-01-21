@@ -1,0 +1,41 @@
+unit PDV.Model.PDV;
+
+interface
+
+uses
+  PDV.Model.PDV.Interfaces;
+
+type
+
+  TModelPDV = class(TInterfacedObject, iModelPDV, imo)
+  private
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: iModelPDV;
+    function Metodos: iModelPDVMetodos;
+
+  end;
+
+implementation
+
+{ TModelPDV }
+
+constructor TModelPDV.Create;
+begin
+
+end;
+
+destructor TModelPDV.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelPDV.New: iModelPDV;
+begin
+  Result := Self.Create;
+end;
+
+end.

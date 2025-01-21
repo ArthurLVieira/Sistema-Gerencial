@@ -16,13 +16,12 @@ type
     destructor Destroy; override;
     class function New: iModelCaixaMetodosFactory;
     function Abertura(Parent: iModelCaixa): iModelCaixaMetodosAbertura;
-    function Login(Parent: iModelCaixa): iModelCaixaMetodosLogin;
   end;
 
 implementation
 
 uses
-  PDV.Model.Caixa.Metodos.Abertura, PDV.Model.Caixa.Metodos.Login;
+  PDV.Model.Caixa.Metodos.Abertura;
 
 { TModelCaixaMetodosFactory }
 
@@ -41,12 +40,6 @@ destructor TModelCaixaMetodosFactory.Destroy;
 begin
 
   inherited;
-end;
-
-function TModelCaixaMetodosFactory.Login(Parent: iModelCaixa)
-  : iModelCaixaMetodosLogin;
-begin
-  Result := TModelCaixaMetodosLogin.New(Parent);
 end;
 
 class function TModelCaixaMetodosFactory.New: iModelCaixaMetodosFactory;

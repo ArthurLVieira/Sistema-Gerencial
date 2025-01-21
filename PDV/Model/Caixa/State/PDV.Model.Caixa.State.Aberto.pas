@@ -14,11 +14,12 @@ type
     constructor Create;
     destructor Destroy; override;
     class function New: iModelCaixaMetodos;
-    function Login: iModelCaixaMetodosLogin;
     function Abertura: iModelCaixaMetodosAbertura;
     function Fechamento: iModelCaixaMetodosFechamento;
     function Bloquear: iModelCaixaMetodosBloquear;
     function Desbloquear: iModelCaixaMetodosDesbloquear;
+    function Sangria: iModelCaixaMetodosSangria;
+    function Suprimento: iModelCaixaMetodosSuprimento;
     function &End: iModelCaixa;
   end;
 
@@ -51,7 +52,7 @@ end;
 
 function TModelCaixaStateAberto.Desbloquear: iModelCaixaMetodosDesbloquear;
 begin
-  raise Exception.Create('Caixa Desbloqueado');
+
 end;
 
 destructor TModelCaixaStateAberto.Destroy;
@@ -65,14 +66,19 @@ begin
 
 end;
 
-function TModelCaixaStateAberto.Login: iModelCaixaMetodosLogin;
+class function TModelCaixaStateAberto.New: iModelCaixaMetodos;
+begin
+  Result := Self.Create;
+end;
+
+function TModelCaixaStateAberto.Sangria: iModelCaixaMetodosSangria;
 begin
 
 end;
 
-class function TModelCaixaStateAberto.New: iModelCaixaMetodos;
+function TModelCaixaStateAberto.Suprimento: iModelCaixaMetodosSuprimento;
 begin
-  Result := Self.Create;
+
 end;
 
 end.

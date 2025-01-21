@@ -14,6 +14,8 @@ type
     constructor Create;
     destructor Destroy; override;
     class function New: iModelUsuarioMetodos;
+    function LoginCaixa: iModelUSuarioMetodosLogin;
+    function FecharCaixa: iModelUsuarioMetodosFecharCaixa;
   end;
 
 implementation
@@ -29,6 +31,16 @@ destructor TModelUsuarioTipoCaixa.Destroy;
 begin
 
   inherited;
+end;
+
+function TModelUsuarioTipoCaixa.FecharCaixa: iModelUsuarioMetodosFecharCaixa;
+begin
+
+end;
+
+function TModelUsuarioTipoCaixa.LoginCaixa: iModelUSuarioMetodosLogin;
+begin
+
 end;
 
 class function TModelUsuarioTipoCaixa.New: iModelUsuarioMetodos;

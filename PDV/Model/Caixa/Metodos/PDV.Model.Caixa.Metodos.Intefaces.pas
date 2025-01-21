@@ -10,7 +10,6 @@ type
   iModelCaixaMetodosFactory = interface
     ['{BD9ECA9C-E25A-4544-B411-3529C8FEFA35}']
     function Abertura(Parent: iModelCaixa): iModelCaixaMetodosAbertura;
-    function Login(Parent: iModelCaixa): iModelCaixaMetodosLogin;
   end;
 
 implementation

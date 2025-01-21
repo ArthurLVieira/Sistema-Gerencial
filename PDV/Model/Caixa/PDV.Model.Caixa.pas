@@ -15,14 +15,16 @@ type
     constructor Create;
     destructor Destroy; override;
     class function New: iModelCaixa;
+    function SetState(Value: iModelCaixaMetodos): iModelCaixa;
     function Metodos: iModelCaixaMetodos;
 
     { Metodos do Caixa }
-    function Login: iModelCaixaMetodosLogin;
     function Abertura: iModelCaixaMetodosAbertura;
     function Fechamento: iModelCaixaMetodosFechamento;
     function Bloquear: iModelCaixaMetodosBloquear;
     function Desbloquear: iModelCaixaMetodosDesbloquear;
+    function Sangria: iModelCaixaMetodosSangria;
+    function Suprimento: iModelCaixaMetodosSuprimento;
     function &End: iModelCaixa;
   end;
 
@@ -35,7 +37,8 @@ uses
 
 function TModelCaixa.Abertura: iModelCaixaMetodosAbertura;
 begin
-  FMetodosFactory.Abertura(Self);
+  FState.Abertura;
+  Result := FMetodosFactory.Abertura(Self);
 end;
 
 function TModelCaixa.Bloquear: iModelCaixaMetodosBloquear;
@@ -69,11 +72,6 @@ begin
 
 end;
 
-function TModelCaixa.Login: iModelCaixaMetodosLogin;
-begin
-
-end;
-
 function TModelCaixa.Metodos: iModelCaixaMetodos;
 begin
   Result := Self;
@@ -82,6 +80,22 @@ end;
 class function TModelCaixa.New: iModelCaixa;
 begin
   Result := Self.Create;
+end;
+
+function TModelCaixa.Sangria: iModelCaixaMetodosSangria;
+begin
+
+end;
+
+function TModelCaixa.SetState(Value: iModelCaixaMetodos): iModelCaixa;
+begin
+  Result := Self;
+  FState := Value;
+end;
+
+function TModelCaixa.Suprimento: iModelCaixaMetodosSuprimento;
+begin
+
 end;
 
 end.

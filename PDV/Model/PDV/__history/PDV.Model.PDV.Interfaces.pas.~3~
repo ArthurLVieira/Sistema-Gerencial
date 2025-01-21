@@ -1,0 +1,18 @@
+unit PDV.Model.PDV.Interfaces;
+
+interface
+
+type
+
+  iModelPDV = interface
+    ['{D6B27104-D2A2-4DB0-A519-80D08798297E}']
+  end;
+
+  iModelPDVMetodos = interface
+    ['{8EC00686-A9A6-46F9-9D41-64B973D57AAB}']
+    function Login: iModelPDVMetodos;
+  end;
+
+implementation
+
+end.

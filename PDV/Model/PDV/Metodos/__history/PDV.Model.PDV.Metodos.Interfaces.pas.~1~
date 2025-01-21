@@ -1,0 +1,17 @@
+unit PDV.Model.PDV.Metodos.Interfaces;
+
+interface
+
+uses
+  PDV.Model.PDV.Interfaces;
+
+type
+
+  TModelPDVMetodosFactory = interface
+    ['{57843779-77FD-4E94-9305-CD76F06BD907}']
+    function Login: iModelPDVMetodosLogin;
+  end;
+
+implementation
+
+end.

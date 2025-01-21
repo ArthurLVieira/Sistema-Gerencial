@@ -1,0 +1,40 @@
+unit PDV.Model.PDV.Metodos.Factory;
+
+interface
+
+uses
+  PDV.Model.PDV.Metodos.Interfaces;
+
+type
+
+  TModelPDVMetodosFactory = class(TInterfacedObject, iModelPDVMetodosFactory)
+  private
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: iModelPDVMetodosFactory;
+    function Login: iModelPDVMetodosLogin;
+  end;
+
+implementation
+
+{ TModelPDVMetodosFactory }
+
+constructor TModelPDVMetodosFactory.Create;
+begin
+
+end;
+
+destructor TModelPDVMetodosFactory.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelPDVMetodosFactory.New: iModelPDVMetodosFactory;
+begin
+  Result := Self.Create;
+end;
+
+end.

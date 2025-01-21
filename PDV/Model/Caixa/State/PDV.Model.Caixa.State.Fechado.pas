@@ -14,11 +14,12 @@ type
     constructor Create;
     destructor Destroy; override;
     class function New: iModelCaixaMetodos;
-    function Login: iModelCaixaMetodosLogin;
     function Abertura: iModelCaixaMetodosAbertura;
     function Fechamento: iModelCaixaMetodosFechamento;
     function Bloquear: iModelCaixaMetodosBloquear;
     function Desbloquear: iModelCaixaMetodosDesbloquear;
+    function Sangria: iModelCaixaMetodosSangria;
+    function Suprimento: iModelCaixaMetodosSuprimento;
     function &End: iModelCaixa;
   end;
 
@@ -65,14 +66,19 @@ begin
   raise Exception.Create('Caixa Fechado!');
 end;
 
-function TModelCaixaStateFechado.Login: iModelCaixaMetodosLogin;
+class function TModelCaixaStateFechado.New: iModelCaixaMetodos;
+begin
+  Result := Self.Create;
+end;
+
+function TModelCaixaStateFechado.Sangria: iModelCaixaMetodosSangria;
 begin
 
 end;
 
-class function TModelCaixaStateFechado.New: iModelCaixaMetodos;
+function TModelCaixaStateFechado.Suprimento: iModelCaixaMetodosSuprimento;
 begin
-  Result := Self.Create;
+
 end;
 
 end.

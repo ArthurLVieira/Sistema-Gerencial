@@ -1,0 +1,42 @@
+unit PDV.Model.PDV.Metodos.Login;
+
+interface
+
+uses
+  PDV.Model.PDV.Interfaces, PDV.Model.Usuario.Interfaces;
+
+type
+
+  TModelPDVMetodosLogin = class(TInterfacedObject, iModelPDVMetodosLogin)
+  private
+    FParent: iModelPDV;
+  public
+    constructor Create(Parent: iModelPDV);
+    destructor Destroy; override;
+    class function New(Value: iModelPDV): iModelPDVMetodosLogin;
+    function SetOperador(Parent: iModelUsuario): iModelPDVMetodosLogin;
+    function &End: iModelPDVMetodos;
+  end;
+
+implementation
+
+{ TModelPDVMetodosLogin }
+
+constructor TModelPDVMetodosLogin.Create(Parent: iModelPDV);
+begin
+
+end;
+
+destructor TModelPDVMetodosLogin.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelPDVMetodosLogin.New(Parent: iModelPDV)
+  : iModelPDVMetodosLogin;
+begin
+  Result := Self.Create(Parent);
+end;
+
+end.

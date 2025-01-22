@@ -1,0 +1,20 @@
+unit PDV.Model.Caixa.Factory;
+
+interface
+
+uses
+  PDV.Model.Caixa.Interfaces;
+
+type
+
+  TModelCaixaFactory = class(TInterfacedObject, iModelCaixaFactory)
+  private
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: iModelCaixa;
+  end;
+
+implementation
+
+end.

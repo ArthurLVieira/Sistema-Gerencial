@@ -30,7 +30,10 @@ uses
   PDV.Model.PDV.Metodos.Interfaces in 'Model\PDV\Metodos\PDV.Model.PDV.Metodos.Interfaces.pas',
   PDV.Model.PDV.Metodos.Factory in 'Model\PDV\Metodos\PDV.Model.PDV.Metodos.Factory.pas',
   PDV.View.Dialog.CapturaValorAbertura in 'View\Dialog\PDV.View.Dialog.CapturaValorAbertura.pas' {Form1},
-  PDV.Model.Caixa.Metodos.Fechamento in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Fechamento.pas';
+  PDV.Model.Caixa.Metodos.Fechamento in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Fechamento.pas',
+  PDV.Model.Caixa.Factory in 'Model\Caixa\PDV.Model.Caixa.Factory.pas',
+  PDV.Model.Caixa.Metodos.Bloquear in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Bloquear.pas',
+  PDV.Model.Caixa.Metodos.Desbloquear in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Desbloquear.pas';
 
 {$R *.res}
 

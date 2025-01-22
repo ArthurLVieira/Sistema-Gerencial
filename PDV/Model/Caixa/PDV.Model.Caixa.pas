@@ -9,7 +9,7 @@ type
 
   TModelCaixa = class(TInterfacedObject, iModelCaixa, iModelCaixaMetodos)
   private
-    FMetodosFactory: iModelCaixaMetodosFactory;
+    FMetodos: iModelCaixaMetodosFactory;
     FState: iModelCaixaMetodos;
   public
     constructor Create;
@@ -38,12 +38,12 @@ uses
 function TModelCaixa.Abertura: iModelCaixaMetodosAbertura;
 begin
   FState.Abertura;
-  Result := FMetodosFactory.Abertura(Self);
+  Result := FMetodos.Abertura(Self);
 end;
 
 function TModelCaixa.Bloquear: iModelCaixaMetodosBloquear;
 begin
-
+  Result := FMetodos.Bloquear(Self);
 end;
 
 function TModelCaixa.&End: iModelCaixa;
@@ -53,7 +53,7 @@ end;
 
 constructor TModelCaixa.Create;
 begin
-  FMetodosFactory := TModelCaixaMetodosFactory.New;
+  FMetodos := TModelCaixaMetodosFactory.New;
 end;
 
 function TModelCaixa.Desbloquear: iModelCaixaMetodosDesbloquear;
@@ -69,7 +69,7 @@ end;
 
 function TModelCaixa.Fechamento: iModelCaixaMetodosFechamento;
 begin
-
+  Result := FMetodos.Fechamento(Self);
 end;
 
 function TModelCaixa.Metodos: iModelCaixaMetodos;

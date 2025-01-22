@@ -25,13 +25,21 @@ uses
   PDV.Model.Caixa.State.Fechado in 'Model\Caixa\State\PDV.Model.Caixa.State.Fechado.pas',
   PDV.Model.Caixa.State.Blqueado in 'Model\Caixa\State\PDV.Model.Caixa.State.Blqueado.pas',
   PDV.Model.PDV.Interfaces in 'Model\PDV\PDV.Model.PDV.Interfaces.pas',
-  PDV.Model.PDV in 'Model\PDV\PDV.Model.PDV.pas';
+  PDV.Model.PDV in 'Model\PDV\PDV.Model.PDV.pas',
+  PDV.Model.PDV.Metodos.Login in 'Model\PDV\Metodos\PDV.Model.PDV.Metodos.Login.pas',
+  PDV.Model.PDV.Metodos.Interfaces in 'Model\PDV\Metodos\PDV.Model.PDV.Metodos.Interfaces.pas',
+  PDV.Model.PDV.Metodos.Factory in 'Model\PDV\Metodos\PDV.Model.PDV.Metodos.Factory.pas',
+  PDV.View.Dialog.CapturaValorAbertura in 'View\Dialog\PDV.View.Dialog.CapturaValorAbertura.pas' {Form1},
+  PDV.Model.Caixa.Metodos.Fechamento in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Fechamento.pas',
+  PDV.Model.Caixa.Factory in 'Model\Caixa\PDV.Model.Caixa.Factory.pas',
+  PDV.Model.Caixa.Metodos.Bloquear in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Bloquear.pas';
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.CreateForm(TFrmPrincipal, FrmPrincipal);
+  Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TFrmPedirSenha, FrmPedirSenha);
   Application.Run;
 end.

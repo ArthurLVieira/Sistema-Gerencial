@@ -3,23 +3,35 @@ unit PDV.Model.Caixa.Metodos.Factory;
 interface
 
 uses
-  PDV.Model.Caixa.Metodos.Intefaces;
+  PDV.Model.Caixa.Metodos.Intefaces, PDV.Model.Caixa.Interfaces;
 
 type
 
   TModelCaixaMetodosFactory = class(TInterfacedObject,
     iModelCaixaMetodosFactory)
   private
-
+    FParent: iModelCaixa;
   public
     constructor Create;
     destructor Destroy; override;
     class function New: iModelCaixaMetodosFactory;
+    function Abertura(Parent: iModelCaixa): iModelCaixaMetodosAbertura;
+    function Fechamento(Parent: iModelCaixa): iModelCaixaMetodosFechamento;
+    function Bloquear(Parent: iModelCaixa): iModelCaixaMetodosBloquear;
   end;
 
 implementation
 
+uses
+  PDV.Model.Caixa.Metodos.Abertura;
+
 { TModelCaixaMetodosFactory }
+
+function TModelCaixaMetodosFactory.Abertura(Parent: iModelCaixa)
+  : iModelCaixaMetodosAbertura;
+begin
+  TModelCaixaMetodosAbertura.New(Parent);
+end;
 
 constructor TModelCaixaMetodosFactory.Create;
 begin

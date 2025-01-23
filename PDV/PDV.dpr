@@ -30,6 +30,7 @@ uses
   PDV.Model.PDV.Metodos.Interfaces in 'Model\PDV\Metodos\PDV.Model.PDV.Metodos.Interfaces.pas',
   PDV.Model.PDV.Metodos.Factory in 'Model\PDV\Metodos\PDV.Model.PDV.Metodos.Factory.pas',
   PDV.View.Dialog.CapturaValorAbertura in 'View\Dialog\PDV.View.Dialog.CapturaValorAbertura.pas' {Form1},
+<<<<<<< HEAD
   PDV.Model.Caixa.Metodos.Fechamento in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Fechamento.pas',
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -46,6 +47,9 @@ uses
 =======
   PDV.View.Login in 'View\PDV.View.Login.pas' {FrmLogin};
 >>>>>>> Stashed changes
+=======
+  PDV.Model.Caixa.Metodos.Fechamento in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Fechamento.pas';
+>>>>>>> parent of 08ec048 (PDV)
 
 {$R *.res}
 

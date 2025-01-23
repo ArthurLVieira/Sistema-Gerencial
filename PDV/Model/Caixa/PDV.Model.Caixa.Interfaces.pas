@@ -62,6 +62,7 @@ type
   iModelCaixaMetodosSangria = interface
     ['{DBCBA710-8BF1-4D7B-9362-D33527AE37BE}']
     function SetValorSangria(Value: Currency): iModelCaixaMetodosSangria;
+    function SetFormaSangria(Value: string): iModelCaixaMetodosSangria;
     function SetOperador(Value: iModelUsuario): iModelCaixaMetodosSangria;
     function SetDescricao(Value: string): iModelCaixaMetodosSangria;
     function &End: iModelCaixaMetodos;

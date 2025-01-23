@@ -32,7 +32,9 @@ uses
   PDV.Model.Usuario.Tipos.Caixa in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Caixa.pas',
   PDV.Model.Usuario.Tipos.Interfaces in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Interfaces.pas',
   PDV.View.Dialog.PedirSenha in 'View\Dialog\PDV.View.Dialog.PedirSenha.pas' {FrmPedirSenha},
-  PDV.Model.Caixa.Metodos.Bloquear in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Bloquear.pas';
+  PDV.Model.Caixa.Metodos.Bloquear in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Bloquear.pas',
+  PDV.Model.Caixa.Metodos.Desbloquear in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Desbloquear.pas',
+  PDV.Model.Caixa.Metodos.Sangria in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Sangria.pas';
 
 {$R *.res}
 

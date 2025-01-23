@@ -32,9 +32,13 @@ uses
   PDV.View.Dialog.CapturaValorAbertura in 'View\Dialog\PDV.View.Dialog.CapturaValorAbertura.pas' {Form1},
   PDV.Model.Caixa.Metodos.Fechamento in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Fechamento.pas',
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   PDV.Model.Caixa.Factory in 'Model\Caixa\PDV.Model.Caixa.Factory.pas',
   PDV.Model.Caixa.Metodos.Bloquear in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Bloquear.pas',
   PDV.Model.Caixa.Metodos.Desbloquear in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Desbloquear.pas';
+=======
+  PDV.View.Login in 'View\PDV.View.Login.pas' {FrmLogin};
+>>>>>>> Stashed changes
 =======
   PDV.View.Login in 'View\PDV.View.Login.pas' {FrmLogin};
 >>>>>>> Stashed changes

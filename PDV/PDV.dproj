@@ -315,10 +315,13 @@
         <DCCReference Include="Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Fechamento.pas"/>
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <DCCReference Include="Model\Caixa\PDV.Model.Caixa.Factory.pas"/>
         <DCCReference Include="Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Bloquear.pas"/>
         <DCCReference Include="Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Desbloquear.pas"/>
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         <DCCReference Include="View\PDV.View.Login.pas">
@@ -326,6 +329,9 @@
             <FormType>fmx</FormType>
         </DCCReference>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

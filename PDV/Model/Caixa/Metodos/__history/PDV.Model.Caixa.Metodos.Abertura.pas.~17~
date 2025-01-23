@@ -13,7 +13,6 @@ type
     FValor: Currency;
     FParent: iModelCaixa;
     FOperador: imodelUsuario;
-
   public
     constructor Create(Parent: iModelCaixa);
     destructor Destroy; override;

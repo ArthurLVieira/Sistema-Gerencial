@@ -4,13 +4,13 @@ interface
 
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes,
-  System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.ListBox,
+  System.Variants, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.ListBox,
   FMX.Edit, FMX.Effects, FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects,
-  FMX.Layouts;
+  FMX.Layouts, FMX.Types;
 
 type
-  TForm2 = class(TForm)
+  TFrmPedirSenha = class(TForm)
     Layout1: TLayout;
     Layout2: TLayout;
     Layout3: TLayout;
@@ -34,7 +34,7 @@ type
     Image2: TImage;
     Label6: TLabel;
     ComboBox1: TComboBox;
-    Label3: TLabel;
+    LblConfimSenha: TLabel;
     Layout10: TLayout;
     Layout11: TLayout;
     BtnConfirm: TButton;
@@ -44,24 +44,35 @@ type
   public
     { Public declarations }
     Procedure ExibeForm(Title, TextConfirm, TextCancel, TextConfirmSenha
-      : string; VisibleTextConfirmSenha, VisibleImage: Boolean);
+      : string; VisibleTextConfirmSenha, VisibleImage: Boolean;
+      ButtonConfirm, ButtonCancel: TNotifyEvent);
 
   end;
 
 var
-  Form2: TForm2;
+  FrmPedirSenha: TFrmPedirSenha;
 
 implementation
 
 {$R *.fmx}
 { TForm2 }
 
-procedure TForm2.ExibeForm(Title, TextConfirm, TextCancel, TextConfirmSenha
-  : string; VisibleTextConfirmSenha, VisibleImage: Boolean);
+procedure TFrmPedirSenha.ExibeForm(Title, TextConfirm, TextCancel,
+  TextConfirmSenha: string; VisibleTextConfirmSenha, VisibleImage: Boolean;
+  ButtonConfirm, ButtonCancel: TNotifyEvent);
 begin
   LblTitle.Text := Title;
   BtnConfirm.Text := TextConfirm;
   BtnCancel.Text := TextCancel;
+  LblConfimSenha.Text := TextConfirmSenha;
+  LblConfimSenha.Visible := VisibleTextConfirmSenha;
+  Layout9.Visible := VisibleImage;
+  BtnConfirm.OnClick := ButtonConfirm;
+  BtnCancel.OnClick := ButtonCancel;
 end;
+
+initialization
+
+RegisterFmxClasses([TFrmPedirSenha]);
 
 end.

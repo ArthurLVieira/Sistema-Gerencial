@@ -1,0 +1,40 @@
+unit PDV.Model.Caixa.Metodos.Bloquear;
+
+interface
+
+uses
+  PDV.Model.Caixa.Interfaces;
+
+type
+
+  TModelCaixaMetodosBloquear = class(TInterfacedObject,
+    iModelCaixaMetodosBloquear)
+  private
+    FParent: imod
+  public
+    constructor Create(Parent: iModelCaixa);
+    destructor Destroy; override;
+    class function New(Parent: iModelCaixa): iModelCaixaMetodosBloquear;
+  end;
+
+implementation
+
+{ TModelCaixaMetodosBloquear }
+
+constructor TModelCaixaMetodosBloquear.Create(Parent: iModelCaixa);
+begin
+
+end;
+
+destructor TModelCaixaMetodosBloquear.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelCaixaMetodosBloquear.New(Parent: iModelCaixa): iModelCaixaMetodosBloquear;
+begin
+  Result := Self.Create(Parent);
+end;
+
+end.

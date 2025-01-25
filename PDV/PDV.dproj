@@ -352,6 +352,9 @@
 =======
         <DCCReference Include="Model\Caixa\State\PDV.Model.Caixa.State.Desblqueado.pas"/>
 >>>>>>> Stashed changes
+=======
+        <DCCReference Include="Model\Caixa\State\PDV.Model.Caixa.State.Desblqueado.pas"/>
+>>>>>>> Stashed changes
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

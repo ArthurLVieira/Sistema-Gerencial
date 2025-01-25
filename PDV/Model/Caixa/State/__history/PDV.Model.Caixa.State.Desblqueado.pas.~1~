@@ -1,0 +1,7 @@
+unit PDV.Model.Caixa.State.Desblqueado;
+
+interface
+
+implementation
+
+end.

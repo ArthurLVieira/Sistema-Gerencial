@@ -3,6 +3,7 @@
 	<Transactions>
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <Transaction>2025/01/10 14:31:57.000.769,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2025/01/10 14:35:28.000.109,C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\user\Documents\GitHub\Sistema Genrencial\PDV\View\PDV.View.Principal.fmx</Transaction>
     <Transaction>2025/01/10 14:35:28.000.109,C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\user\Documents\GitHub\Sistema Genrencial\PDV\View\PDV.View.Principal.pas</Transaction>
@@ -76,6 +77,8 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     <Transaction>2025/01/23 11:43:15.000.004,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2025/01/23 11:43:41.000.441,C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\PDV.dproj</Transaction>
     <Transaction>2025/01/23 11:43:56.000.586,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Controller\Dialog\PDV.Controller.Dialog.Interfaces.pas</Transaction>
@@ -115,6 +118,9 @@
     <Transaction>2025/01/24 00:10:37.459,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
     <Transaction>2025/01/24 00:11:09.609,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Caixa\State\PDV.Model.Caixa.State.Desblqueado.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

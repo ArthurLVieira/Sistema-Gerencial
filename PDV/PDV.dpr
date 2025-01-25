@@ -37,10 +37,14 @@ uses
   PDV.Model.Caixa.Metodos.Sangria in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Sangria.pas',
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   PDV.Model.Usuario.Tipos.Factory in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Factory.pas',
   PDV.Model.Usuario in 'Model\Usuario\PDV.Model.Usuario.pas',
   PDV.Model.Usuario.Factory.Interfaces in 'Model\Usuario\PDV.Model.Usuario.Factory.Interfaces.pas',
   PDV.Model.Usuario.Factory in 'Model\Usuario\PDV.Model.Usuario.Factory.pas';
+=======
+  PDV.Model.Caixa.State.Desblqueado in 'Model\Caixa\State\PDV.Model.Caixa.State.Desblqueado.pas';
+>>>>>>> Stashed changes
 =======
   PDV.Model.Caixa.State.Desblqueado in 'Model\Caixa\State\PDV.Model.Caixa.State.Desblqueado.pas';
 >>>>>>> Stashed changes

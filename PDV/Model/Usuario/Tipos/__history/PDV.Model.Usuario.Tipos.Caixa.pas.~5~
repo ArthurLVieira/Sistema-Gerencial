@@ -14,6 +14,11 @@ type
     constructor Create;
     destructor Destroy; override;
     class function New: iModelUsuarioMetodos;
+    function LoginDeCaixa: iModelUsuarioMetodosLoginDeCaixa;
+    function AbrirCaixa: iModelUSuarioMetodosAbrirCaixa;
+    function FecharCaixa: iModelUsuarioMetodosFecharCaixa;
+    function DescontoNaVenda: iModelUsuarioMetodosDescontoNaVenda;
+    function DescontoNoItem: iModelUsuarioMetodosDescontoNoItem;
   end;
 
 implementation

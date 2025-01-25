@@ -1,0 +1,7 @@
+unit PDV.Model.Usuario.Tipos.Factory;
+
+interface
+
+implementation
+
+end.

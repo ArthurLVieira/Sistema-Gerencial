@@ -34,7 +34,11 @@ uses
   PDV.View.Dialog.PedirSenha in 'View\Dialog\PDV.View.Dialog.PedirSenha.pas' {FrmPedirSenha},
   PDV.Model.Caixa.Metodos.Bloquear in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Bloquear.pas',
   PDV.Model.Caixa.Metodos.Desbloquear in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Desbloquear.pas',
-  PDV.Model.Caixa.Metodos.Sangria in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Sangria.pas';
+  PDV.Model.Caixa.Metodos.Sangria in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Sangria.pas',
+  PDV.Model.Usuario.Tipos.Factory in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Factory.pas',
+  PDV.Model.Usuario in 'Model\Usuario\PDV.Model.Usuario.pas',
+  PDV.Model.Usuario.Factory.Interfaces in 'Model\Usuario\PDV.Model.Usuario.Factory.Interfaces.pas',
+  PDV.Model.Usuario.Factory in 'Model\Usuario\PDV.Model.Usuario.Factory.pas';
 
 {$R *.res}
 

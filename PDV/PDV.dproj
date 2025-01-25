@@ -344,6 +344,10 @@
         <DCCReference Include="Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Bloquear.pas"/>
         <DCCReference Include="Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Desbloquear.pas"/>
         <DCCReference Include="Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Sangria.pas"/>
+        <DCCReference Include="Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Factory.pas"/>
+        <DCCReference Include="Model\Usuario\PDV.Model.Usuario.pas"/>
+        <DCCReference Include="Model\Usuario\PDV.Model.Usuario.Factory.Interfaces.pas"/>
+        <DCCReference Include="Model\Usuario\PDV.Model.Usuario.Factory.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

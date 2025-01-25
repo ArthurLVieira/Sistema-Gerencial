@@ -11,7 +11,7 @@ type
 
   iModelUsuarioTiposFactory = interface
     ['{619A0B06-AC55-4EB0-8E78-4A08170C6D8E}']
-    function UsuarioTipo(Parent: iModelUsuario;
+    function UsuarioTipo(TipoUsuario: TUsuarioTipo; Parent: iModelUsuario;
       NextResponsability: iModelUsuario): iModelUsuarioMetodos;
   end;
 

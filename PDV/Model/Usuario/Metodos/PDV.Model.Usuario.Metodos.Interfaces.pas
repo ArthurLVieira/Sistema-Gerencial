@@ -4,22 +4,43 @@ interface
 
 type
 
-  iModelUSuarioMetodosLogin = interface;
+  iModelUSuarioMetodosAbrirCaixa = interface;
   iModelUsuarioMetodosFecharCaixa = interface;
+  iModelUsuarioMetodosLoginDeCaixa = interface;
+  iModelUsuarioMetodosDescontoNaVenda = interface;
+  iModelUsuarioMetodosDescontoNoItem = interface;
 
   iModelUsuarioMetodos = interface
     ['{ED6E207E-99FB-4C07-8384-BF24D27CF5C5}']
-    function LoginCaixa: iModelUSuarioMetodosLogin;
+    function LoginDeCaixa: iModelUsuarioMetodosLoginDeCaixa;
+    function AbrirCaixa: iModelUSuarioMetodosAbrirCaixa;
     function FecharCaixa: iModelUsuarioMetodosFecharCaixa;
+    function DescontoNaVenda: iModelUsuarioMetodosDescontoNaVenda;
+    function DescontoNoItem: iModelUsuarioMetodosDescontoNoItem;
   end;
 
-  iModelUSuarioMetodosLogin = interface
+  iModelUsuarioMetodosLoginDeCaixa = interface
+    ['{13E12AFB-3DEB-4FBC-BB6F-37E1907FA9F3}']
+    function &End: iModelUsuarioMetodos;
+  end;
+
+  iModelUSuarioMetodosAbrirCaixa = interface
     ['{549C7CAD-A0CD-4EFB-92EA-75F7225EFDBD}']
     function &End: iModelUsuarioMetodos;
   end;
 
   iModelUsuarioMetodosFecharCaixa = interface
     ['{9B48FC85-C64F-4E25-A12F-DA06721C1115}']
+  end;
+
+  iModelUsuarioMetodosDescontoNaVenda = interface
+    ['{57A6D8F9-CEF4-4046-8AA0-83F19BE69610}']
+    function &End: iModelUsuarioMetodos;
+  end;
+
+  iModelUsuarioMetodosDescontoNoItem = interface
+    ['{1C63DD0B-BAF1-40CF-B25E-87158228234F}']
+
   end;
 
 implementation

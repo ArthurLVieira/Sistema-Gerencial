@@ -1,0 +1,33 @@
+unit PDV.Model.Usuario.Metodos.Interfaces;
+
+interface
+
+type
+
+  iModelUSuarioMetodosAbrirCaixa = interface;
+  iModelUsuarioMetodosFecharCaixa = interface;
+
+  iModelUsuarioMetodos = interface
+    ['{ED6E207E-99FB-4C07-8384-BF24D27CF5C5}']
+    function LoginDeCaixa: function AbrirCaixa: iModelUSuarioMetodosAbrirCaixa;
+    function FecharCaixa: iModelUsuarioMetodosFecharCaixa;
+
+  end;
+
+  iModelUsuarioMetodosLoginDeCaixa = interface
+    ['{13E12AFB-3DEB-4FBC-BB6F-37E1907FA9F3}']
+    function &End: iModelUsuarioMetodos;
+  end;
+
+  iModelUSuarioMetodosAbrirCaixa = interface
+    ['{549C7CAD-A0CD-4EFB-92EA-75F7225EFDBD}']
+    function &End: iModelUsuarioMetodos;
+  end;
+
+  iModelUsuarioMetodosFecharCaixa = interface
+    ['{9B48FC85-C64F-4E25-A12F-DA06721C1115}']
+  end;
+
+implementation
+
+end.

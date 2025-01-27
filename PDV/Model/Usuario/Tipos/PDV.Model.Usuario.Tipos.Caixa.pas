@@ -3,7 +3,7 @@ unit PDV.Model.Usuario.Tipos.Caixa;
 interface
 
 uses
-  PDV.Model.Usuario.Interfaces, PDV.Model.Usuario.Metodos.Interfaces;
+  PDV.Model.Usuario.Interfaces;
 
 type
 
@@ -17,21 +17,17 @@ type
     destructor Destroy; override;
     class function New(Parent: iModelUsuario;
       NextResponsability: iModelUsuarioMetodos): iModelUsuarioMetodos;
-    function LoginDeCaixa: iModelUsuarioMetodosLoginDeCaixa;
-    function AbrirCaixa: iModelUSuarioMetodosAbrirCaixa;
-    function FecharCaixa: iModelUsuarioMetodosFecharCaixa;
-    function DescontoNaVenda: iModelUsuarioMetodosDescontoNaVenda;
-    function DescontoNoItem: iModelUsuarioMetodosDescontoNoItem;
+    function SetOeparacao(Value: string): iModelUsuarioMetodos;
+    function LoginDeCaixa: iModelUsuarioMetodos;
+    function AberturaDeCaixa: iModelUsuarioMetodos;
+    function FechamenoDeCaixa: iModelUsuarioMetodos;
+    function DescontoNaVenda: iModelUsuarioMetodos;
+    function DescontoNoItem: iModelUsuarioMetodos;
   end;
 
 implementation
 
 { TModelUsuarioTipoCaixa }
-
-function TModelUsuarioTipoCaixa.AbrirCaixa: iModelUSuarioMetodosAbrirCaixa;
-begin
-
-end;
 
 constructor TModelUsuarioTipoCaixa.Create(Parent: iModelUsuario;
   NextResponsability: iModelUsuarioMetodos);
@@ -40,32 +36,10 @@ begin
   FNextResponsability := NextResponsability;
 end;
 
-function TModelUsuarioTipoCaixa.DescontoNaVenda
-  : iModelUsuarioMetodosDescontoNaVenda;
-begin
-
-end;
-
-function TModelUsuarioTipoCaixa.DescontoNoItem
-  : iModelUsuarioMetodosDescontoNoItem;
-begin
-
-end;
-
 destructor TModelUsuarioTipoCaixa.Destroy;
 begin
 
   inherited;
-end;
-
-function TModelUsuarioTipoCaixa.FecharCaixa: iModelUsuarioMetodosFecharCaixa;
-begin
-
-end;
-
-function TModelUsuarioTipoCaixa.LoginDeCaixa: iModelUsuarioMetodosLoginDeCaixa;
-begin
-
 end;
 
 class function TModelUsuarioTipoCaixa.New(Parent: iModelUsuario;

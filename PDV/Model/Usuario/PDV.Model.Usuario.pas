@@ -3,13 +3,13 @@ unit PDV.Model.Usuario;
 interface
 
 uses
-  PDV.Model.Usuario.Interfaces, PDV.Model.Usuario.Metodos.Interfaces;
+  PDV.Model.Usuario.Interfaces;
 
 type
 
   TModelUsuario = class(TInterfacedObject, iModelUsuario)
   private
-
+    FTipoUsuario: iModelUsuarioMetodos;
   public
     constructor Create;
     destructor Destroy; override;
@@ -32,10 +32,11 @@ begin
   inherited;
 end;
 
-function TModelUsuario.Metodos(
-  Usuario: iModelUsuarioMetodos): iModelUsuarioMetodos;
+function TModelUsuario.Metodos(Usuario: iModelUsuarioMetodos)
+  : iModelUsuarioMetodos;
 begin
-
+  FTipoUsuario := Usuario;
+  Result := FTipoUsuario;
 end;
 
 class function TModelUsuario.New: iModelUsuario;

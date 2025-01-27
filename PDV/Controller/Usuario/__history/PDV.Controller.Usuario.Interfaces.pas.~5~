@@ -1,0 +1,18 @@
+unit PDV.Controller.Usuario.Interfaces;
+
+interface
+
+uses
+  PDV.Model.Usuario.Interfaces;
+
+type
+
+  iContrllerUsuario = interface
+    ['{C3B04A66-5562-42C0-A5CB-B6A9822F6495}']
+    function Caixa: iModelUsuario;
+    function Fiscal: imodel
+  end;
+
+implementation
+
+end.

@@ -18,7 +18,6 @@ uses
   PDV.Model.Caixa.Metodos.Factory in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Factory.pas',
   PDV.Model.Caixa.Metodos.Fechamento in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Fechamento.pas',
   PDV.Model.Caixa.Metodos.Intefaces in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Intefaces.pas',
-  PDV.Model.Caixa.Metodos.Login in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Login.pas',
   PDV.Model.Caixa.State.Aberto in 'Model\Caixa\State\PDV.Model.Caixa.State.Aberto.pas',
   PDV.Model.Caixa.State.Blqueado in 'Model\Caixa\State\PDV.Model.Caixa.State.Blqueado.pas',
   PDV.Model.Caixa.State.Fechado in 'Model\Caixa\State\PDV.Model.Caixa.State.Fechado.pas',
@@ -31,16 +30,37 @@ uses
   PDV.Model.Usuario.Interfaces in 'Model\Usuario\PDV.Model.Usuario.Interfaces.pas',
   PDV.Model.Usuario.Metodos.Interfaces in 'Model\Usuario\Metodos\PDV.Model.Usuario.Metodos.Interfaces.pas',
   PDV.Model.Usuario.Tipos.Caixa in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Caixa.pas',
-  PDV.Model.Usuario.Tipos.Interfaces in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Interfaces.pas';
+  PDV.Model.Usuario.Tipos.Interfaces in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Interfaces.pas',
+  PDV.View.Dialog.PedirSenha in 'View\Dialog\PDV.View.Dialog.PedirSenha.pas' {FrmPedirSenha},
+  PDV.Model.Caixa.Metodos.Bloquear in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Bloquear.pas',
+  PDV.Model.Caixa.Metodos.Desbloquear in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Desbloquear.pas',
+  PDV.Model.Caixa.Metodos.Sangria in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Sangria.pas',
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+  PDV.Model.Usuario.Tipos.Factory in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Factory.pas',
+  PDV.Model.Usuario in 'Model\Usuario\PDV.Model.Usuario.pas',
+  PDV.Model.Usuario.Factory.Interfaces in 'Model\Usuario\PDV.Model.Usuario.Factory.Interfaces.pas',
+  PDV.Model.Usuario.Factory in 'Model\Usuario\PDV.Model.Usuario.Factory.pas';
+=======
+  PDV.Model.Caixa.State.Desblqueado in 'Model\Caixa\State\PDV.Model.Caixa.State.Desblqueado.pas';
+>>>>>>> Stashed changes
+=======
+  PDV.Model.Caixa.State.Desblqueado in 'Model\Caixa\State\PDV.Model.Caixa.State.Desblqueado.pas';
+>>>>>>> Stashed changes
+=======
+  PDV.Model.Caixa.State.Desblqueado in 'Model\Caixa\State\PDV.Model.Caixa.State.Desblqueado.pas';
+>>>>>>> Stashed changes
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TFrmLogin, FrmLogin);
   Application.CreateForm(TFrmPrincipal, FrmPrincipal);
+  Application.CreateForm(TFrmLogin, FrmLogin);
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFrmPedirSenha, FrmPedirSenha);
   Application.Run;
 end.

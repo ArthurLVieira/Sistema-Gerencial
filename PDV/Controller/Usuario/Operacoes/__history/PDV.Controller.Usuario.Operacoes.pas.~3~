@@ -1,0 +1,41 @@
+unit PDV.Controller.Usuario.Operacoes;
+
+interface
+
+uses
+  PDV.Controller.Usuario.Operacoes.Interfaces;
+
+type
+
+  TControllerUsuarioOperacoes = class(TInterfacedObject,
+    iControllerUsuarioOperacoes)
+  private
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: iControllerUsuarioOperacoes;
+    function PedirSenha: iControllerDialogPedirSenha;
+  end;
+
+implementation
+
+{ TControllerUsuarioOperacoes }
+
+constructor TControllerUsuarioOperacoes.Create;
+begin
+
+end;
+
+destructor TControllerUsuarioOperacoes.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TControllerUsuarioOperacoes.New: iControllerUsuarioOperacoes;
+begin
+  Result := Self.Create;
+end;
+
+end.

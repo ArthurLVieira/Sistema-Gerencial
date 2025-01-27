@@ -7,7 +7,7 @@ uses
 
 type
 
-  iControllerDialogFactory = interface
+  iControllerDialog = interface
     ['{5DC621A9-C821-47AB-ABCA-180F4C02A785}']
     function PedirSenha: iControllerDialogPedirSenha;
   end;

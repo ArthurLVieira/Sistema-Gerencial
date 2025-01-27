@@ -1,0 +1,39 @@
+unit PDV.Controller.Dialog.Factory;
+
+interface
+
+uses
+  PDV.Controller.Dialog.Interfaces;
+
+type
+
+  TControllerDialogFactory = class(TInterfacedObject, iControllerDialogFactory)
+  private
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: iControllerDialogFactory;
+  end;
+
+implementation
+
+{ TControllerDialogFactory }
+
+constructor TControllerDialogFactory.Create;
+begin
+
+end;
+
+destructor TControllerDialogFactory.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TControllerDialogFactory.New: iControllerDialogFactory;
+begin
+  Result := Self.Create;
+end;
+
+end.

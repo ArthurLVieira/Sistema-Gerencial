@@ -36,14 +36,14 @@ uses
 
 { TControllerDialogPedirSenha }
 
-function TControllerDialogPedirSenha.ButtonCancel(Value: TNotifyEvent)
-  : iControllerDialogPedirSenha;
+function TControllerDialogPedirSenha.ButtonCancel(
+  Value: TNotifyEvent): iControllerDialogPedirSenha;
 begin
 
 end;
 
-function TControllerDialogPedirSenha.ButtonConfirm(Value: TNotifyEvent)
-  : iControllerDialogPedirSenha;
+function TControllerDialogPedirSenha.ButtonConfirm(
+  Value: TNotifyEvent): iControllerDialogPedirSenha;
 begin
 
 end;
@@ -64,8 +64,8 @@ end;
 
 procedure TControllerDialogPedirSenha.Exibir;
 begin
-  TContrllerForms.Create.CreateForm('TFrmPedirSenha');
-  TFrmPedirSenha.Create(nil);
+TContrllerForms.Create.CreateForm('TFrmPedirSenha');
+TFrmPedirSenha.Create(nil)
 end;
 
 class function TControllerDialogPedirSenha.New: iControllerDialogPedirSenha;
@@ -73,38 +73,38 @@ begin
   Result := Self.Create;
 end;
 
-function TControllerDialogPedirSenha.TextCancel(Value: string)
-  : iControllerDialogPedirSenha;
+function TControllerDialogPedirSenha.TextCancel(
+  Value: string): iControllerDialogPedirSenha;
 begin
 
 end;
 
-function TControllerDialogPedirSenha.TextConfirm(Value: string)
-  : iControllerDialogPedirSenha;
+function TControllerDialogPedirSenha.TextConfirm(
+  Value: string): iControllerDialogPedirSenha;
 begin
 
 end;
 
-function TControllerDialogPedirSenha.TextConfirmSenha(Value: string)
-  : iControllerDialogPedirSenha;
+function TControllerDialogPedirSenha.TextConfirmSenha(
+  Value: string): iControllerDialogPedirSenha;
 begin
 
 end;
 
-function TControllerDialogPedirSenha.Title(Value: string)
-  : iControllerDialogPedirSenha;
+function TControllerDialogPedirSenha.Title(
+  Value: string): iControllerDialogPedirSenha;
 begin
 
 end;
 
-function TControllerDialogPedirSenha.VisibleImage(Value: Double)
-  : iControllerDialogPedirSenha;
+function TControllerDialogPedirSenha.VisibleImage(
+  Value: Double): iControllerDialogPedirSenha;
 begin
 
 end;
 
-function TControllerDialogPedirSenha.VisibleTextConfirmSenha(Value: Boolean)
-  : iControllerDialogPedirSenha;
+function TControllerDialogPedirSenha.VisibleTextConfirmSenha(
+  Value: Boolean): iControllerDialogPedirSenha;
 begin
 
 end;

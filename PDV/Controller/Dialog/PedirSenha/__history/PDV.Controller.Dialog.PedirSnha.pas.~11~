@@ -65,7 +65,7 @@ end;
 procedure TControllerDialogPedirSenha.Exibir;
 begin
   TContrllerForms.Create.CreateForm('TFrmPedirSenha');
-  TFrmPedirSenha.Create(nil);
+  TFrmPedirSenha.Create(nil)
 end;
 
 class function TControllerDialogPedirSenha.New: iControllerDialogPedirSenha;

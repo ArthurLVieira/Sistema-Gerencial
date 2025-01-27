@@ -8,7 +8,7 @@ uses
 type
   iControllerUsuarioMetodos = interface;
 
-  iControllerUsuario = interface
+  iContrllerUsuario = interface
     ['{C3B04A66-5562-42C0-A5CB-B6A9822F6495}']
     function Metodos: iControllerUsuarioMetodos;
     function Operacoes: iControllerUsuarioOperacoes;

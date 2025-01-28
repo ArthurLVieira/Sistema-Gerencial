@@ -22,7 +22,7 @@ type
 implementation
 
 uses
-  PDV.Model.Usuario.Tipos.Factory, PDV.Model.Usuario;
+  PDV.Model.Usuario, PDV.Model.Usuario.Tipos.Factory;
 
 { TModelUsuarioFactory }
 

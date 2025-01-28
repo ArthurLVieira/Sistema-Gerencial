@@ -44,7 +44,8 @@ uses
   PDV.Controller.Usuario.Operacoes.Interfaces in 'Controller\Usuario\Operacoes\PDV.Controller.Usuario.Operacoes.Interfaces.pas',
   PDV.Controller.Usuario.Operacoes in 'Controller\Usuario\Operacoes\PDV.Controller.Usuario.Operacoes.pas',
   PDV.Controller.Dialog.Factory in 'Controller\Dialog\PDV.Controller.Dialog.Factory.pas',
-  PDV.Controller.Usuario in 'Controller\Usuario\PDV.Controller.Usuario.pas';
+  PDV.Controller.Usuario in 'Controller\Usuario\PDV.Controller.Usuario.pas',
+  PDV.Model.Usuario.Tipos.Fiscal in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Fiscal.pas';
 
 {$R *.res}
 

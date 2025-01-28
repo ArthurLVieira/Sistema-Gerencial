@@ -4,7 +4,7 @@ interface
 
 uses
   PDV.Model.Usuario.Tipos.Interfaces, PDV.Model.Usuario.Interfaces,
-  PDV.Model.Usuario.Metodos.Interfaces;
+  PDV.Controller.Usuario.Interfaces;
 
 type
 
@@ -16,7 +16,8 @@ type
     constructor Create;
     destructor Destroy; override;
     class function New: iModelUsuarioTiposFactory;
-    function UsuarioTipo(TipoUsuario: TUsuarioTipo; Parent: iModelUsuario;
+    function UsuarioTipo(UsuarioController: iControllerUsuario;
+      TipoUsuario: TUsuarioTipo; Parent: iModelUsuario;
       NextResponsability: iModelUsuario): iModelUsuarioMetodos;
   end;
 
@@ -40,7 +41,8 @@ begin
   Result := Self.Create;
 end;
 
-function TModelUsuarioTiposFactory.UsuarioTipo(TipoUsuario: TUsuarioTipo;
+function TModelUsuarioTiposFactory.UsuarioTipo(UsuarioController
+  : iControllerUsuario; TipoUsuario: TUsuarioTipo;
   Parent, NextResponsability: iModelUsuario): iModelUsuarioMetodos;
 begin
   case TipoUsuario of

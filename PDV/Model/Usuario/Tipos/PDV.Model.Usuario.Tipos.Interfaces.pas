@@ -3,7 +3,7 @@ unit PDV.Model.Usuario.Tipos.Interfaces;
 interface
 
 uses
-  PDV.Model.Usuario.Interfaces, PDV.Model.Usuario.Metodos.Interfaces;
+  PDV.Model.Usuario.Interfaces, PDV.Controller.Usuario.Interfaces;
 
 type
 
@@ -11,7 +11,8 @@ type
 
   iModelUsuarioTiposFactory = interface
     ['{619A0B06-AC55-4EB0-8E78-4A08170C6D8E}']
-    function UsuarioTipo(TipoUsuario: TUsuarioTipo; Parent: iModelUsuario;
+    function UsuarioTipo(UsuarioController: iControllerUsuario;
+      TipoUsuario: TUsuarioTipo; Parent: iModelUsuario;
       NextResponsability: iModelUsuario): iModelUsuarioMetodos;
   end;
 

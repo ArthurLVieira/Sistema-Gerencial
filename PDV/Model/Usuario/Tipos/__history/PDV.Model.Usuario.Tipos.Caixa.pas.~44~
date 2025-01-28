@@ -3,7 +3,7 @@ unit PDV.Model.Usuario.Tipos.Caixa;
 interface
 
 uses
-  PDV.Model.Usuario.Interfaces, PDV.Controller.Usuario.Interfaces;
+  PDV.Model.Usuario.Interfaces, PDV.Controller.Usuario.Operacoes.Interfaces;
 
 type
 
@@ -11,19 +11,24 @@ type
   private
     FParent: iModelUsuario;
     FNextResponsability: iModelUsuarioMetodos;
-    FControllerUsuario: iControllerUsuario;
+    FControllerUsuarioOperacoes: iControllerUsuarioOperacoes;
   public
     constructor Create(Parent: iModelUsuario); overload;
     constructor Create(Parent: iModelUsuario;
       NextResponsability: iModelUsuarioMetodos); overload;
-    constructor Create(ControllerUsuario: iControllerUsuario;
+    constructor Create(ControllerUsuario: iControllerUsuarioOperacoes;
       Parent: iModelUsuario; NextResponsability: iModelUsuarioMetodos);
       overload;
     destructor Destroy; override;
-    class function New(ControllerUsuario: iControllerUsuario;
+    class function New(Parent: iModelUsuario): iModelUsuarioMetodos; overload;
+    class function New(Parent: iModelUsuario;
+      NextResponsability: iModelUsuarioMetodos): iModelUsuarioMetodos; overload;
+    class function New(ControllerUsuario: iControllerUsuarioOperacoes;
       Parent: iModelUsuario; NextResponsability: iModelUsuarioMetodos)
-      : iModelUsuarioMetodos;
-    function SetOeparacao(Value: string): iModelUsuarioMetodos;
+      : iModelUsuarioMetodos; overload;
+
+    function SetOeparacao(ControllerUsuarioOperacoes
+      : iControllerUsuarioOperacoes): iModelUsuarioMetodos;
     function LoginDeCaixa: iModelUsuarioMetodos;
     function AberturaDeCaixa: iModelUsuarioMetodos;
     function FechamenoDeCaixa: iModelUsuarioMetodos;
@@ -47,10 +52,18 @@ begin
   FNextResponsability.AberturaDeCaixa;
 end;
 
-constructor TModelUsuarioTipoCaixa.Create(ControllerUsuario: iControllerUsuario;
-  Parent: iModelUsuario; NextResponsability: iModelUsuarioMetodos);
+constructor TModelUsuarioTipoCaixa.Create(ControllerUsuario
+  : iControllerUsuarioOperacoes; Parent: iModelUsuario;
+  NextResponsability: iModelUsuarioMetodos);
 begin
-  FControllerUsuario := ControllerUsuario;
+  FControllerUsuarioOperacoes := ControllerUsuario;
+  FParent := Parent;
+  FNextResponsability := NextResponsability;
+end;
+
+constructor TModelUsuarioTipoCaixa.Create(Parent: iModelUsuario;
+  NextResponsability: iModelUsuarioMetodos);
+begin
   FParent := Parent;
   FNextResponsability := NextResponsability;
 end;
@@ -86,15 +99,27 @@ begin
 
 end;
 
-class function TModelUsuarioTipoCaixa.New(ControllerUsuario: iControllerUsuario;
-  Parent: iModelUsuario; NextResponsability: iModelUsuarioMetodos)
+class function TModelUsuarioTipoCaixa.New(Parent: iModelUsuario)
   : iModelUsuarioMetodos;
+begin
+  Result := Self.Create(Parent);
+end;
+
+class function TModelUsuarioTipoCaixa.New(ControllerUsuario
+  : iControllerUsuarioOperacoes; Parent: iModelUsuario;
+  NextResponsability: iModelUsuarioMetodos): iModelUsuarioMetodos;
 begin
   Result := Self.Create(ControllerUsuario, Parent, NextResponsability);
 end;
 
-function TModelUsuarioTipoCaixa.SetOeparacao(Value: string)
-  : iModelUsuarioMetodos;
+class function TModelUsuarioTipoCaixa.New(Parent: iModelUsuario;
+  NextResponsability: iModelUsuarioMetodos): iModelUsuarioMetodos;
+begin
+  Result := Self.Create(Parent, NextResponsability);
+end;
+
+function TModelUsuarioTipoCaixa.SetOeparacao(ControllerUsuarioOperacoes
+  : iControllerUsuarioOperacoes): iModelUsuarioMetodos;
 begin
 
 end;

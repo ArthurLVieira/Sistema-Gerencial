@@ -278,6 +278,8 @@
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
@@ -303,7 +305,7 @@
         <DCCReference Include="Controller\Dialog\PedirSenha\PDV.Controller.Dialog.PedirSnha.Interfaces.pas"/>
         <DCCReference Include="Controller\Dialog\PedirSenha\PDV.Controller.Dialog.PedirSnha.pas"/>
         <DCCReference Include="Model\PDV.Model.Interfaces.pas"/>
-        <DCCReference Include="Model\PDV.Model.pas"/>
+        <DCCReference Include="Model\PDV.Model.Facade.pas"/>
         <DCCReference Include="Model\Caixa\PDV.Model.Caixa.Interfaces.pas"/>
         <DCCReference Include="Model\Caixa\PDV.Model.Caixa.pas"/>
         <DCCReference Include="Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Abertura.pas"/>
@@ -331,7 +333,7 @@
         <DCCReference Include="Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Factory.pas"/>
         <DCCReference Include="Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Interfaces.pas"/>
         <DCCReference Include="View\Dialog\PDV.View.Dialog.CapturaValor.pas">
-            <Form>Form1</Form>
+            <Form>FrmCapturaValor</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="View\Dialog\PDV.View.Dialog.PedirSenha.pas">
@@ -347,7 +349,7 @@
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="View\Dialog\PDV.View.Dialog.CapturaValorAbertura.pas">
-            <Form>Form2</Form>
+            <Form>FrmCapturaValorAbertura</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="Controller\Usuario\PDV.Controller.Usuario.Interfaces.pas"/>
@@ -356,6 +358,7 @@
         <DCCReference Include="Controller\Dialog\PDV.Controller.Dialog.Factory.pas"/>
         <DCCReference Include="Controller\Usuario\PDV.Controller.Usuario.pas"/>
         <DCCReference Include="Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Fiscal.pas"/>
+        <DCCReference Include="Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Gerente.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -376,8 +379,12 @@
                 <Source>
                     <Source Name="MainSource">PDV.dpr</Source>
                 </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k280.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp280.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
             </Delphi.Personality>
-            <Deployment Version="5">
+            <Deployment Version="4">
                 <DeployFile LocalName="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib" Class="DependencyModule">
                     <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
@@ -412,6 +419,16 @@
                         <Operation>0</Operation>
                     </Platform>
                 </DeployClass>
+                <DeployClass Name="AndroidClasses">
+                    <Platform Name="Android">
+                        <RemoteDir>classes</RemoteDir>
+                        <Operation>64</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>classes</RemoteDir>
+                        <Operation>64</Operation>
+                    </Platform>
+                </DeployClass>
                 <DeployClass Name="AndroidFileProvider">
                     <Platform Name="Android">
                         <RemoteDir>res\xml</RemoteDir>
@@ -419,6 +436,12 @@
                     </Platform>
                     <Platform Name="Android64">
                         <RemoteDir>res\xml</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidGDBServer">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
                         <Operation>1</Operation>
                     </Platform>
                 </DeployClass>
@@ -1044,9 +1067,6 @@
                     <Platform Name="Win64">
                         <Operation>1</Operation>
                     </Platform>
-                    <Platform Name="Win64x">
-                        <Operation>1</Operation>
-                    </Platform>
                 </DeployClass>
                 <DeployClass Name="ProjectiOSDeviceDebug">
                     <Platform Name="iOSDevice32">
@@ -1346,7 +1366,6 @@
                 <Platform value="Android64">True</Platform>
                 <Platform value="iOSDevice64">True</Platform>
                 <Platform value="iOSSimARM64">True</Platform>
-                <Platform value="Linux64">False</Platform>
                 <Platform value="OSX64">True</Platform>
                 <Platform value="OSXARM64">True</Platform>
                 <Platform value="Win32">True</Platform>

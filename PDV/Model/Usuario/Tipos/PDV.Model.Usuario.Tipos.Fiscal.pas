@@ -16,15 +16,16 @@ type
     constructor Create(Parent: iModelUsuario); overload;
     constructor Create(Parent: iModelUsuario;
       NextResponsability: iModelUsuarioMetodos); overload;
-    constructor Create(ControllerUsuario: iControllerUsuarioOperacoes;
-      Parent: iModelUsuario; NextResponsability: iModelUsuarioMetodos);
-      overload;
+    constructor Create(Parent: iModelUsuario;
+      NextResponsability: iModelUsuarioMetodos;
+      ControllerUsuarioOperacoes: iControllerUsuarioOperacoes); overload;
     destructor Destroy; override;
     class function New(Parent: iModelUsuario): iModelUsuarioMetodos; overload;
     class function New(Parent: iModelUsuario;
       NextResponsability: iModelUsuarioMetodos): iModelUsuarioMetodos; overload;
-    class function New(ControllerUsuario: iControllerUsuarioOperacoes;
-      Parent: iModelUsuario; NextResponsability: iModelUsuarioMetodos)
+    class function New(Parent: iModelUsuario;
+      NextResponsability: iModelUsuarioMetodos;
+      ControllerUsuarioOperacoes: iControllerUsuarioOperacoes)
       : iModelUsuarioMetodos; overload;
 
     function SetOeparacao(ControllerUsuarioOperacoes
@@ -52,11 +53,11 @@ begin
   FNextResponsability.AberturaDeCaixa;
 end;
 
-constructor TModelUsuarioTipoFiscal.Create(ControllerUsuario
-  : iControllerUsuarioOperacoes; Parent: iModelUsuario;
-  NextResponsability: iModelUsuarioMetodos);
+constructor TModelUsuarioTipoFiscal.Create(Parent: iModelUsuario;
+  NextResponsability: iModelUsuarioMetodos;
+  ControllerUsuarioOperacoes: iControllerUsuarioOperacoes);
 begin
-  FControllerUsuarioOperacoes := ControllerUsuario;
+  FControllerUsuarioOperacoes := ControllerUsuarioOperacoes;
   FParent := Parent;
   FNextResponsability := NextResponsability;
 end;
@@ -105,11 +106,12 @@ begin
   Result := Self.Create(Parent);
 end;
 
-class function TModelUsuarioTipoFiscal.New(ControllerUsuario
-  : iControllerUsuarioOperacoes; Parent: iModelUsuario;
-  NextResponsability: iModelUsuarioMetodos): iModelUsuarioMetodos;
+class function TModelUsuarioTipoFiscal.New(Parent: iModelUsuario;
+  NextResponsability: iModelUsuarioMetodos;
+  ControllerUsuarioOperacoes: iControllerUsuarioOperacoes)
+  : iModelUsuarioMetodos;
 begin
-  Result := Self.Create(ControllerUsuario, Parent, NextResponsability);
+  Result := Self.Create(Parent, NextResponsability, ControllerUsuarioOperacoes);
 end;
 
 class function TModelUsuarioTipoFiscal.New(Parent: iModelUsuario;

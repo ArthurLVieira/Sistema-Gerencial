@@ -1,0 +1,128 @@
+unit PDV.Model.Usuario.Tipos.Gerente;
+
+interface
+
+uses
+  PDV.Model.Usuario.Interfaces, PDV.Controller.Usuario.Operacoes.Interfaces;
+
+type
+
+  TModelUsuarioTipoGenrente = class(TInterfacedObject, iModelUsuarioMetodos)
+  private
+    FParent: iModelUsuario;
+    FNextResponsability: iModelUsuarioMetodos;
+    FControllerUsuarioOperacoes: iControllerUsuarioOperacoes;
+  public
+    constructor Create(Parent: iModelUsuario); overload;
+    constructor Create(Parent: iModelUsuario;
+      NextResponsability: iModelUsuarioMetodos); overload;
+    constructor Create(Parent: iModelUsuario;
+      NextResponsability: iModelUsuarioMetodos;
+      ControllerUsuario: iControllerUsuarioOperacoes); overload;
+    destructor Destroy; override;
+    class function New(Parent: iModelUsuario): iModelUsuarioMetodos; overload;
+    class function New(Parent: iModelUsuario;
+      NextResponsability: iModelUsuarioMetodos): iModelUsuarioMetodos; overload;
+    class function New(Parent: iModelUsuario;
+      NextResponsability: iModelUsuarioMetodos;
+      ControllerUsuario: iControllerUsuarioOperacoes)
+      : iModelUsuarioMetodos; overload;
+
+    function SetOeparacao(ControllerUsuarioOperacoes
+      : iControllerUsuarioOperacoes): iModelUsuarioMetodos;
+    function LoginDeCaixa: iModelUsuarioMetodos;
+    function AberturaDeCaixa: iModelUsuarioMetodos;
+    function FechamenoDeCaixa: iModelUsuarioMetodos;
+    function DescontoNaVenda: iModelUsuarioMetodos;
+    function DescontoNoItem: iModelUsuarioMetodos;
+    function &End: iModelUsuarioMetodos;
+  end;
+
+implementation
+
+{ TModelUsuarioTipoGenrente }
+
+function TModelUsuarioTipoGenrente.&End: iModelUsuarioMetodos;
+begin
+  Result := Self;
+end;
+
+function TModelUsuarioTipoGenrente.AberturaDeCaixa: iModelUsuarioMetodos;
+begin
+  Result := Self;
+  FNextResponsability.AberturaDeCaixa;
+end;
+
+constructor TModelUsuarioTipoGenrente.Create(Parent: iModelUsuario;
+  NextResponsability: iModelUsuarioMetodos;
+  ControllerUsuario: iControllerUsuarioOperacoes);
+begin
+  FControllerUsuarioOperacoes := ControllerUsuario;
+  FParent := Parent;
+  FNextResponsability := NextResponsability;
+end;
+
+constructor TModelUsuarioTipoGenrente.Create(Parent: iModelUsuario;
+  NextResponsability: iModelUsuarioMetodos);
+begin
+  FParent := Parent;
+  FNextResponsability := NextResponsability;
+end;
+
+constructor TModelUsuarioTipoGenrente.Create(Parent: iModelUsuario);
+begin
+  FParent := Parent;
+end;
+
+function TModelUsuarioTipoGenrente.DescontoNaVenda: iModelUsuarioMetodos;
+begin
+
+end;
+
+function TModelUsuarioTipoGenrente.DescontoNoItem: iModelUsuarioMetodos;
+begin
+
+end;
+
+destructor TModelUsuarioTipoGenrente.Destroy;
+begin
+
+  inherited;
+end;
+
+function TModelUsuarioTipoGenrente.FechamenoDeCaixa: iModelUsuarioMetodos;
+begin
+
+end;
+
+function TModelUsuarioTipoGenrente.LoginDeCaixa: iModelUsuarioMetodos;
+begin
+
+end;
+
+class function TModelUsuarioTipoGenrente.New(Parent: iModelUsuario)
+  : iModelUsuarioMetodos;
+begin
+  Result := Self.Create(Parent);
+end;
+
+class function TModelUsuarioTipoGenrente.New(Parent: iModelUsuario;
+  NextResponsability: iModelUsuarioMetodos;
+  ControllerUsuario: iControllerUsuarioOperacoes): iModelUsuarioMetodos;
+begin
+  Result := Self.Create(ControllerUsuario, Parent, NextResponsability);
+end;
+
+class function TModelUsuarioTipoGenrente.New(Parent: iModelUsuario;
+  NextResponsability: iModelUsuarioMetodos): iModelUsuarioMetodos;
+begin
+  Result := Self.Create(Parent, NextResponsability);
+end;
+
+function TModelUsuarioTipoGenrente.SetOeparacao(ControllerUsuarioOperacoes
+  : iControllerUsuarioOperacoes): iModelUsuarioMetodos;
+begin
+
+end;
+
+end.

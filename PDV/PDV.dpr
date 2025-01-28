@@ -8,7 +8,7 @@ uses
   PDV.Controller.Dialog.PedirSnha.Interfaces in 'Controller\Dialog\PedirSenha\PDV.Controller.Dialog.PedirSnha.Interfaces.pas',
   PDV.Controller.Dialog.PedirSnha in 'Controller\Dialog\PedirSenha\PDV.Controller.Dialog.PedirSnha.pas',
   PDV.Model.Interfaces in 'Model\PDV.Model.Interfaces.pas',
-  PDV.Model in 'Model\PDV.Model.pas',
+  PDV.Model.Facade in 'Model\PDV.Model.Facade.pas',
   PDV.Model.Caixa.Interfaces in 'Model\Caixa\PDV.Model.Caixa.Interfaces.pas',
   PDV.Model.Caixa in 'Model\Caixa\PDV.Model.Caixa.pas',
   PDV.Model.Caixa.Metodos.Abertura in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Abertura.pas',
@@ -35,28 +35,29 @@ uses
   PDV.Model.Usuario.Tipos.Caixa in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Caixa.pas',
   PDV.Model.Usuario.Tipos.Factory in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Factory.pas',
   PDV.Model.Usuario.Tipos.Interfaces in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Interfaces.pas',
-  PDV.View.Dialog.CapturaValor in 'View\Dialog\PDV.View.Dialog.CapturaValor.pas' {Form1},
+  PDV.View.Dialog.CapturaValor in 'View\Dialog\PDV.View.Dialog.CapturaValor.pas' {FrmCapturaValor},
   PDV.View.Dialog.PedirSenha in 'View\Dialog\PDV.View.Dialog.PedirSenha.pas' {FrmPedirSenha},
   PDV.View.Login in 'View\PDV.View.Login.pas' {FrmLogin},
   PDV.View.Principal in 'View\PDV.View.Principal.pas' {FrmPrincipal},
-  PDV.View.Dialog.CapturaValorAbertura in 'View\Dialog\PDV.View.Dialog.CapturaValorAbertura.pas' {Form2},
+  PDV.View.Dialog.CapturaValorAbertura in 'View\Dialog\PDV.View.Dialog.CapturaValorAbertura.pas' {FrmCapturaValorAbertura},
   PDV.Controller.Usuario.Interfaces in 'Controller\Usuario\PDV.Controller.Usuario.Interfaces.pas',
   PDV.Controller.Usuario.Operacoes.Interfaces in 'Controller\Usuario\Operacoes\PDV.Controller.Usuario.Operacoes.Interfaces.pas',
   PDV.Controller.Usuario.Operacoes in 'Controller\Usuario\Operacoes\PDV.Controller.Usuario.Operacoes.pas',
   PDV.Controller.Dialog.Factory in 'Controller\Dialog\PDV.Controller.Dialog.Factory.pas',
   PDV.Controller.Usuario in 'Controller\Usuario\PDV.Controller.Usuario.pas',
-  PDV.Model.Usuario.Tipos.Fiscal in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Fiscal.pas';
+  PDV.Model.Usuario.Tipos.Fiscal in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Fiscal.pas',
+  PDV.Model.Usuario.Tipos.Gerente in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Gerente.pas';
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TFrmLogin, FrmLogin);
   Application.CreateForm(TFrmPrincipal, FrmPrincipal);
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFrmLogin, FrmLogin);
+  Application.CreateForm(TFrmCapturaValor, FrmCapturaValor);
   Application.CreateForm(TFrmPedirSenha, FrmPedirSenha);
   Application.CreateForm(TFrmLogin, FrmLogin);
+  Application.CreateForm(TFrmCapturaValorAbertura, FrmCapturaValorAbertura);
   Application.CreateForm(TFrmPrincipal, FrmPrincipal);
-  Application.CreateForm(TForm2, Form2);
   Application.Run;
 end.

@@ -1,0 +1,16 @@
+unit PDV.Model.Interfaces;
+
+interface
+
+uses
+  PDV.Model.Usuario.Interfaces;
+
+type
+
+  iModelFacade = interface
+    function Usuario: imodelUsuario;
+  end;
+
+implementation
+
+end.

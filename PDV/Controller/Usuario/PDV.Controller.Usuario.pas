@@ -11,7 +11,7 @@ type
   TControllerUsuario = class(TInterfacedObject, iControllerUsuario,
     iControllerUsuarioMetodos)
   private
-
+    FModelUsuarioMetodos: iModelUsuarioMetodos;
   public
     constructor Create;
     destructor Destroy; override;
@@ -29,7 +29,7 @@ type
 implementation
 
 uses
-  PDV.Controller.Usuario.Operacoes;
+  PDV.Controller.Usuario.Operacoes, PDV.Model.Facade;
 
 { TControllerUsuario }
 
@@ -40,7 +40,7 @@ end;
 
 constructor TControllerUsuario.Create;
 begin
-
+   FModelUsuarioMetodos := tmodelfacade.New.Usuario.Usuario;
 end;
 
 destructor TControllerUsuario.Destroy;

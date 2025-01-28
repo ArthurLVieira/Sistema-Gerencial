@@ -7,7 +7,7 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs;
 
 type
-  TForm2 = class(TForm)
+  TFrmCapturaValorAbertura = class(TForm)
   private
     { Private declarations }
   public
@@ -15,7 +15,7 @@ type
   end;
 
 var
-  Form2: TForm2;
+  FrmCapturaValorAbertura: TFrmCapturaValorAbertura;
 
 implementation
 

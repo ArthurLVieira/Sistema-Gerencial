@@ -3,7 +3,8 @@ unit PDV.Model.Facade;
 interface
 
 uses
-  PDV.Model.Interfaces, PDV.Model.Usuario.Factory.Interfaces;
+  PDV.Model.Interfaces, PDV.Model.Usuario.Factory.Interfaces,
+  PDV.Model.Caixa.Interfaces;
 
 type
 
@@ -15,14 +16,20 @@ type
     destructor Destroy; override;
     class function New: iModelFacade;
     function Usuario: iModelUsuarioFactory;
+    function Caixa: iModelCaixaFactory;
   end;
 
 implementation
 
 uses
-  PDV.Model.Usuario.Factory;
+  PDV.Model.Usuario.Factory, PDV.Model.Caixa.Factory;
 
 { TModelFacade }
+
+function TModelFacade.Caixa: iModelCaixaFactory;
+begin
+  Result := TModelCaixaFactory.New;
+end;
 
 constructor TModelFacade.Create;
 begin

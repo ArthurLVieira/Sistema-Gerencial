@@ -75,6 +75,11 @@ type
     function &End: iModelCaixaMetodos;
   end;
 
+  iModelCaixaFactory = interface
+    ['{D776F0EF-F4AB-4C11-ADA2-E044BC51D17A}']
+    function Caixa: iModelCaixa;
+  end;
+
 implementation
 
 end.

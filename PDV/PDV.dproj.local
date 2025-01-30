@@ -12,6 +12,7 @@
     <Transaction>2025/01/26 12:43:30.000.943,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Caixa\PDV.Model.Caixa.Interfaces.pas</Transaction>
     <Transaction>2025/01/26 12:43:31.000.011,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Caixa\PDV.Model.Caixa.pas</Transaction>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <Transaction>2025/01/26 12:43:39.000.995,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Sangria.pas</Transaction>
     <Transaction>2025/01/26 12:43:39.000.799,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Desbloquear.pas</Transaction>
     <Transaction>2025/01/26 12:43:39.000.837,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Factory.pas</Transaction>
@@ -40,6 +41,15 @@
     <Transaction>2025/01/26 12:43:39.000.701,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Abertura.pas</Transaction>
     <Transaction>2025/01/26 12:43:39.000.837,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Factory.pas</Transaction>
     <Transaction>2025/01/26 12:43:39.000.760,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Bloquear.pas</Transaction>
+=======
+    <Transaction>2025/01/26 12:43:39.000.799,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Desbloquear.pas</Transaction>
+    <Transaction>2025/01/26 12:43:39.000.995,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Sangria.pas</Transaction>
+    <Transaction>2025/01/26 12:43:39.000.908,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Fechamento.pas</Transaction>
+    <Transaction>2025/01/26 12:43:39.000.946,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Intefaces.pas</Transaction>
+    <Transaction>2025/01/26 12:43:39.000.701,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Abertura.pas</Transaction>
+    <Transaction>2025/01/26 12:43:39.000.837,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Factory.pas</Transaction>
+    <Transaction>2025/01/26 12:43:39.000.760,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Bloquear.pas</Transaction>
+>>>>>>> Stashed changes
     <Transaction>2025/01/26 12:43:51.000.299,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Caixa\State\PDV.Model.Caixa.State.Blqueado.pas</Transaction>
     <Transaction>2025/01/26 12:43:51.000.414,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Caixa\State\PDV.Model.Caixa.State.Fechado.pas</Transaction>
     <Transaction>2025/01/26 12:43:51.000.345,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Caixa\State\PDV.Model.Caixa.State.Desblqueado.pas</Transaction>
@@ -51,11 +61,15 @@
     <Transaction>2025/01/26 12:44:19.000.385,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\PDV\Metodos\PDV.Model.PDV.Metodos.Interfaces.pas</Transaction>
     <Transaction>2025/01/26 12:44:19.000.436,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\PDV\Metodos\PDV.Model.PDV.Metodos.Login.pas</Transaction>
     <Transaction>2025/01/26 12:44:30.000.214,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\PDV.Model.Usuario.Factory.Interfaces.pas</Transaction>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     <Transaction>2025/01/26 12:44:30.000.345,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\PDV.Model.Usuario.Interfaces.pas</Transaction>
     <Transaction>2025/01/26 12:44:30.000.384,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\PDV.Model.Usuario.pas</Transaction>
     <Transaction>2025/01/26 12:44:30.000.267,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\PDV.Model.Usuario.Factory.pas</Transaction>
     <Transaction>2025/01/26 12:45:14.000.778,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\Metodos\PDV.Model.Usuario.Metodos.Interfaces.pas</Transaction>
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     <Transaction>2025/01/26 12:45:27.000.222,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Factory.pas</Transaction>
     <Transaction>2025/01/26 12:45:27.000.151,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Caixa.pas</Transaction>
@@ -63,6 +77,10 @@
 =======
     <Transaction>2025/01/26 12:45:27.000.151,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Caixa.pas</Transaction>
     <Transaction>2025/01/26 12:45:27.000.336,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Interfaces.pas</Transaction>
+=======
+    <Transaction>2025/01/26 12:45:27.000.151,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Caixa.pas</Transaction>
+    <Transaction>2025/01/26 12:45:27.000.336,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Interfaces.pas</Transaction>
+>>>>>>> Stashed changes
     <Transaction>2025/01/26 12:45:27.000.222,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Factory.pas</Transaction>
     <Transaction>2025/01/26 12:45:41.000.244,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\View\PDV.View.Login.pas</Transaction>
 >>>>>>> Stashed changes
@@ -73,8 +91,13 @@
     <Transaction>2025/01/26 12:53:11.000.996,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
     <Transaction>2025/01/26 12:53:33.000.180,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit2.pas</Transaction>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <Transaction>2025/01/26 12:54:49.000.972,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit2.fmx=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\View\Dialog\PDV.View.Dialog.CapturaValorAbertura.fmx</Transaction>
     <Transaction>2025/01/26 12:54:49.000.972,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit2.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\View\Dialog\PDV.View.Dialog.CapturaValorAbertura.pas</Transaction>
+=======
+    <Transaction>2025/01/26 12:54:49.000.972,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\View\Dialog\PDV.View.Dialog.CapturaValorAbertura.fmx=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit2.fmx</Transaction>
+    <Transaction>2025/01/26 12:54:49.000.972,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\View\Dialog\PDV.View.Dialog.CapturaValorAbertura.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit2.pas</Transaction>
+>>>>>>> Stashed changes
 =======
     <Transaction>2025/01/26 12:54:49.000.972,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\View\Dialog\PDV.View.Dialog.CapturaValorAbertura.fmx=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit2.fmx</Transaction>
     <Transaction>2025/01/26 12:54:49.000.972,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\View\Dialog\PDV.View.Dialog.CapturaValorAbertura.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit2.pas</Transaction>
@@ -94,6 +117,7 @@
     <Transaction>2025/01/27 12:04:26.000.153,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Controller\Usuario\Operacoes\PDV.Controller.Usuario.Operacoes.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
     <Transaction>2025/01/28 12:34:24.000.757,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <Transaction>2025/01/28 12:34:41.000.663,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Fiscal.pas</Transaction>
     <Transaction>2025/01/28 18:52:14.000.397,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
     <Transaction>2025/01/28 19:00:00.000.753,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\PDV.Model.pas</Transaction>
@@ -109,12 +133,17 @@
     <Transaction>2025/01/30 12:17:45.734,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
     <Transaction>2025/01/30 12:18:01.961,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\Funcoes\PDV.Model.Usuario.Funcoes.ListarUsuario.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
 =======
+=======
+>>>>>>> Stashed changes
     <Transaction>2025/01/28 12:34:41.000.663,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Fiscal.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
     <Transaction>2025/01/28 13:54:22.000.741,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
     <Transaction>2025/01/28 13:54:51.000.119,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Gerente.pas</Transaction>
     <Transaction>2025/01/28 17:30:34.000.179,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\PDV.Model.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\PDV.Model.Facade.pas</Transaction>
     <Transaction>2025/01/29 15:23:55.963,=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
     <Transaction>2025/01/29 15:24:10.233,C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Model\Caixa\PDV.Model.Caixa.Factory.pas=C:\Users\user\Documents\GitHub\Sistema-Gerencial\PDV\Unit1.pas</Transaction>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   </Transactions>
 </BorlandProject>

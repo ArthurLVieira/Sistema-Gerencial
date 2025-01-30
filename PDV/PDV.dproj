@@ -359,11 +359,15 @@
         <DCCReference Include="Controller\Usuario\PDV.Controller.Usuario.pas"/>
         <DCCReference Include="Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Fiscal.pas"/>
         <DCCReference Include="Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Gerente.pas"/>
+<<<<<<< Updated upstream
         <DCCReference Include="Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Padrao.pas"/>
         <DCCReference Include="Controller\Dialog\LoginCaixa\PDV.Controller.Dialog.LoginCaixa.Interfaces.pas"/>
         <DCCReference Include="Controller\Dialog\LoginCaixa\PDV.Controller.Dialog.LoginCaixa.pas"/>
         <DCCReference Include="Model\Usuario\Funcoes\PDV.Model.Usuario.Funcoes.Interfaces.pas"/>
         <DCCReference Include="Model\Usuario\Funcoes\PDV.Model.Usuario.Funcoes.ListarUsuario.pas"/>
+=======
+        <DCCReference Include="Model\Caixa\PDV.Model.Caixa.Factory.pas"/>
+>>>>>>> Stashed changes
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

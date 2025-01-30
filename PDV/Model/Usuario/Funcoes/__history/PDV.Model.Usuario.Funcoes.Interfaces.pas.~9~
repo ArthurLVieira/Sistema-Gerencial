@@ -3,19 +3,15 @@ unit PDV.Model.Usuario.Funcoes.Interfaces;
 interface
 
 uses
-  System.Generics.Collections;
+  System.Generics.Collections, PDV.Model.Usuario.Interfaces;
 
 type
-
-  iModelUsuarioFuncoes = interface
-    ['{5157FB3A-1257-4193-925D-D8F95789C7F5}']
-  end;
+  iModelUsuarioFuncoesListarUsuario = interface;
 
   iModelUsuarioFuncoesListarUsuario = interface
     ['{4B67B254-EE3C-4020-8926-9378240D230E}']
-    function ListaUsuario: TList
+    function &End: iModelUsuario;
   end;
-
 
 implementation
 

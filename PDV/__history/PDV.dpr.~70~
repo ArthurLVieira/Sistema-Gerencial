@@ -8,7 +8,7 @@ uses
   PDV.Controller.Dialog.PedirSnha.Interfaces in 'Controller\Dialog\PedirSenha\PDV.Controller.Dialog.PedirSnha.Interfaces.pas',
   PDV.Controller.Dialog.PedirSnha in 'Controller\Dialog\PedirSenha\PDV.Controller.Dialog.PedirSnha.pas',
   PDV.Model.Interfaces in 'Model\PDV.Model.Interfaces.pas',
-  PDV.Model in 'Model\PDV.Model.pas',
+  PDV.Model.Facade in 'Model\PDV.Model.Facade.pas',
   PDV.Model.Caixa.Interfaces in 'Model\Caixa\PDV.Model.Caixa.Interfaces.pas',
   PDV.Model.Caixa in 'Model\Caixa\PDV.Model.Caixa.pas',
   PDV.Model.Caixa.Metodos.Abertura in 'Model\Caixa\Metodos\PDV.Model.Caixa.Metodos.Abertura.pas',
@@ -46,7 +46,20 @@ uses
   PDV.Controller.Dialog.Factory in 'Controller\Dialog\PDV.Controller.Dialog.Factory.pas',
   PDV.Controller.Usuario in 'Controller\Usuario\PDV.Controller.Usuario.pas',
   PDV.Model.Usuario.Tipos.Fiscal in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Fiscal.pas',
-  PDV.Model.Usuario.Tipos.Gerente in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Gerente.pas';
+  PDV.Model.Usuario.Tipos.Gerente in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Gerente.pas',
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+  PDV.Model.Usuario.Tipos.Padrao in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Padrao.pas',
+  PDV.Controller.Dialog.LoginCaixa.Interfaces in 'Controller\Dialog\LoginCaixa\PDV.Controller.Dialog.LoginCaixa.Interfaces.pas',
+  PDV.Controller.Dialog.LoginCaixa in 'Controller\Dialog\LoginCaixa\PDV.Controller.Dialog.LoginCaixa.pas',
+  PDV.Model.Usuario.Funcoes.Interfaces in 'Model\Usuario\Funcoes\PDV.Model.Usuario.Funcoes.Interfaces.pas',
+  PDV.Model.Usuario.Funcoes.ListarUsuario in 'Model\Usuario\Funcoes\PDV.Model.Usuario.Funcoes.ListarUsuario.pas';
+=======
+  PDV.Model.Caixa.Factory in 'Model\Caixa\PDV.Model.Caixa.Factory.pas';
+>>>>>>> Stashed changes
+=======
+  PDV.Model.Caixa.Factory in 'Model\Caixa\PDV.Model.Caixa.Factory.pas';
+>>>>>>> Stashed changes
 
 {$R *.res}
 

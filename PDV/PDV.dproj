@@ -359,6 +359,11 @@
         <DCCReference Include="Controller\Usuario\PDV.Controller.Usuario.pas"/>
         <DCCReference Include="Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Fiscal.pas"/>
         <DCCReference Include="Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Gerente.pas"/>
+        <DCCReference Include="Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Padrao.pas"/>
+        <DCCReference Include="Controller\Dialog\LoginCaixa\PDV.Controller.Dialog.LoginCaixa.Interfaces.pas"/>
+        <DCCReference Include="Controller\Dialog\LoginCaixa\PDV.Controller.Dialog.LoginCaixa.pas"/>
+        <DCCReference Include="Model\Usuario\Funcoes\PDV.Model.Usuario.Funcoes.Interfaces.pas"/>
+        <DCCReference Include="Model\Usuario\Funcoes\PDV.Model.Usuario.Funcoes.ListarUsuario.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -384,7 +389,7 @@
                     <Excluded_Packages Name="$(BDSBIN)\dclofficexp280.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
                 </Excluded_Packages>
             </Delphi.Personality>
-            <Deployment Version="4">
+            <Deployment Version="5">
                 <DeployFile LocalName="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib" Class="DependencyModule">
                     <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
@@ -419,16 +424,6 @@
                         <Operation>0</Operation>
                     </Platform>
                 </DeployClass>
-                <DeployClass Name="AndroidClasses">
-                    <Platform Name="Android">
-                        <RemoteDir>classes</RemoteDir>
-                        <Operation>64</Operation>
-                    </Platform>
-                    <Platform Name="Android64">
-                        <RemoteDir>classes</RemoteDir>
-                        <Operation>64</Operation>
-                    </Platform>
-                </DeployClass>
                 <DeployClass Name="AndroidFileProvider">
                     <Platform Name="Android">
                         <RemoteDir>res\xml</RemoteDir>
@@ -436,12 +431,6 @@
                     </Platform>
                     <Platform Name="Android64">
                         <RemoteDir>res\xml</RemoteDir>
-                        <Operation>1</Operation>
-                    </Platform>
-                </DeployClass>
-                <DeployClass Name="AndroidGDBServer">
-                    <Platform Name="Android">
-                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
                         <Operation>1</Operation>
                     </Platform>
                 </DeployClass>
@@ -1067,6 +1056,9 @@
                     <Platform Name="Win64">
                         <Operation>1</Operation>
                     </Platform>
+                    <Platform Name="Win64x">
+                        <Operation>1</Operation>
+                    </Platform>
                 </DeployClass>
                 <DeployClass Name="ProjectiOSDeviceDebug">
                     <Platform Name="iOSDevice32">
@@ -1366,6 +1358,7 @@
                 <Platform value="Android64">True</Platform>
                 <Platform value="iOSDevice64">True</Platform>
                 <Platform value="iOSSimARM64">True</Platform>
+                <Platform value="Linux64">False</Platform>
                 <Platform value="OSX64">True</Platform>
                 <Platform value="OSXARM64">True</Platform>
                 <Platform value="Win32">True</Platform>

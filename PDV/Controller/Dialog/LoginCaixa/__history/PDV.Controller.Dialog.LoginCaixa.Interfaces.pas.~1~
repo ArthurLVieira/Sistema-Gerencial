@@ -1,0 +1,7 @@
+unit PDV.Controller.Dialog.LoginCaixa.Interfaces;
+
+interface
+
+implementation
+
+end.

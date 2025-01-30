@@ -1,0 +1,69 @@
+unit PDV.Model.Usuario.Tipos.Factory;
+
+interface
+
+uses
+  PDV.Model.Usuario.Tipos.Interfaces, PDV.Model.Usuario.Interfaces,
+  PDV.Controller.Usuario.Interfaces,
+  PDV.Controller.Usuario.Operacoes.Interfaces;
+
+type
+
+  TModelUsuarioTiposFactory = class(TInterfacedObject,
+    iModelUsuarioTiposFactory)
+  private
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: iModelUsuarioTiposFactory;
+    function UsuarioTipo(ControllerUsuarioOperacoes
+      : iControllerUsuarioOperacoes; TipoUsuario: TUsuarioTipo;
+      Parent: iModelUsuario; NextResponsability: iModelUsuario)
+      : iModelUsuarioMetodos;
+  end;
+
+implementation
+
+uses PDV.Model.Usuario.Tipos.Caixa, PDV.Model.Usuario.Tipos.Padrao;
+
+{ TModelUsuarioTiposFactory }
+
+constructor TModelUsuarioTiposFactory.Create;
+begin
+
+end;
+
+destructor TModelUsuarioTiposFactory.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelUsuarioTiposFactory.New: iModelUsuarioTiposFactory;
+begin
+  Result := Self.Create;
+end;
+
+function TModelUsuarioTiposFactory.UsuarioTipo(ControllerUsuarioOperacoes
+  : iControllerUsuarioOperacoes; TipoUsuario: TUsuarioTipo;
+  Parent, NextResponsability: iModelUsuario): iModelUsuarioMetodos;
+var
+  FNextResponsability: iModelUsuario;
+begin
+
+  if not Assigned(NextResponsability) then
+    FNextResponsability := TModelUsuarioTipoPadrao.New(Parent);
+
+  case TipoUsuario of
+    Caixa:
+      // Result := TModelUsuarioTipoCaixa.New(Parent, NextResponsability,
+      // ControllerUsuarioOperacoes);
+    Fiscal:
+      ;
+    Gerente:
+      ;
+  end;
+end;
+
+end.

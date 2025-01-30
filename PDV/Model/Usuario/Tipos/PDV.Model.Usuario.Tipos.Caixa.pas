@@ -54,15 +54,6 @@ begin
 end;
 
 constructor TModelUsuarioTipoCaixa.Create(Parent: iModelUsuario;
-  NextResponsability: iModelUsuarioMetodos;
-  ControllerUsuarioOperacoes: iControllerUsuarioOperacoes);
-begin
-  FControllerUsuarioOperacoes := ControllerUsuarioOperacoes;
-  FParent := Parent;
-  FNextResponsability := NextResponsability;
-end;
-
-constructor TModelUsuarioTipoCaixa.Create(Parent: iModelUsuario;
   NextResponsability: iModelUsuarioMetodos);
 begin
   FParent := Parent;
@@ -97,6 +88,7 @@ end;
 
 function TModelUsuarioTipoCaixa.LoginDeCaixa: iModelUsuarioMetodos;
 begin
+  Result := Self;
 
 end;
 
@@ -123,7 +115,17 @@ end;
 function TModelUsuarioTipoCaixa.SetOeparacao(ControllerUsuarioOperacoes
   : iControllerUsuarioOperacoes): iModelUsuarioMetodos;
 begin
+  Result := Self;
+  FControllerUsuarioOperacoes := ControllerUsuarioOperacoes;
+end;
 
+constructor TModelUsuarioTipoCaixa.Create(Parent: iModelUsuario;
+  NextResponsability: iModelUsuarioMetodos;
+  ControllerUsuarioOperacoes: iControllerUsuarioOperacoes);
+begin
+  FControllerUsuarioOperacoes := ControllerUsuarioOperacoes;
+  FParent := Parent;
+  FNextResponsability := NextResponsability;
 end;
 
 end.

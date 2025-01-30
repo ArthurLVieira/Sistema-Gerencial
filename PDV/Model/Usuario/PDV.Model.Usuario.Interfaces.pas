@@ -12,6 +12,7 @@ type
   iModelUsuario = interface
     ['{E712E7C7-929E-4CC3-BD55-DB3EE563012F}']
     function Metodos(Usuario: iModelUsuarioMetodos): iModelUsuarioMetodos;
+    //function Funcoes: imodelusuariofuncoes;
   end;
 
   iModelUsuarioMetodos = interface

@@ -46,7 +46,12 @@ uses
   PDV.Controller.Dialog.Factory in 'Controller\Dialog\PDV.Controller.Dialog.Factory.pas',
   PDV.Controller.Usuario in 'Controller\Usuario\PDV.Controller.Usuario.pas',
   PDV.Model.Usuario.Tipos.Fiscal in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Fiscal.pas',
-  PDV.Model.Usuario.Tipos.Gerente in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Gerente.pas';
+  PDV.Model.Usuario.Tipos.Gerente in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Gerente.pas',
+  PDV.Model.Usuario.Tipos.Padrao in 'Model\Usuario\Tipos\PDV.Model.Usuario.Tipos.Padrao.pas',
+  PDV.Controller.Dialog.LoginCaixa.Interfaces in 'Controller\Dialog\LoginCaixa\PDV.Controller.Dialog.LoginCaixa.Interfaces.pas',
+  PDV.Controller.Dialog.LoginCaixa in 'Controller\Dialog\LoginCaixa\PDV.Controller.Dialog.LoginCaixa.pas',
+  PDV.Model.Usuario.Funcoes.Interfaces in 'Model\Usuario\Funcoes\PDV.Model.Usuario.Funcoes.Interfaces.pas',
+  PDV.Model.Usuario.Funcoes.ListarUsuario in 'Model\Usuario\Funcoes\PDV.Model.Usuario.Funcoes.ListarUsuario.pas';
 
 {$R *.res}
 

@@ -4,14 +4,15 @@ interface
 
 uses
   PDV.Controller.Usuario.Interfaces,
-  PDV.Controller.Usuario.Operacoes.Interfaces, PDV.Model.Usuario.Interfaces;
+  PDV.Controller.Usuario.Operacoes.Interfaces, PDV.Model.Usuario.Interfaces,
+  PDV.Model.Usuario.Tipos.Interfaces;
 
 type
 
   TControllerUsuario = class(TInterfacedObject, iControllerUsuario,
     iControllerUsuarioMetodos)
   private
-    FModelUsuarioMetodos: iModelUsuarioMetodos;
+    FModelUsuario: iModelUsuario;
   public
     constructor Create;
     destructor Destroy; override;
@@ -35,12 +36,18 @@ uses
 
 function TControllerUsuario.Caixa: iModelUsuarioMetodos;
 begin
-
+  Result := TModelFacade.New.Usuario.Usuario.Metodos
+    (TModelFacade.New.Usuario.Tipos.UsuarioTipo(Self.Operacoes,
+    TUsuarioTipo.Caixa, FModelUsuario, TModelFacade.New.Usuario.Usuario.Metodos
+    (TModelFacade.New.Usuario.Tipos.UsuarioTipo(Self.Operacoes,
+    TUsuarioTipo.Fiscal, FModelUsuario, TModelFacade.New.Usuario.Usuario.Metodos
+    (TModelFacade.New.Usuario.Tipos.UsuarioTipo(Self.Operacoes,
+    TUsuarioTipo.Gerente, FModelUsuario))))));
 end;
 
 constructor TControllerUsuario.Create;
 begin
-   FModelUsuarioMetodos := tmodelfacade.New.Usuario.Usuario;
+
 end;
 
 destructor TControllerUsuario.Destroy;
@@ -51,12 +58,18 @@ end;
 
 function TControllerUsuario.Fiscal: iModelUsuarioMetodos;
 begin
-
+  Result := TModelFacade.New.Usuario.Usuario.Metodos
+    (TModelFacade.New.Usuario.Tipos.UsuarioTipo(Self.Operacoes,
+    TUsuarioTipo.Fiscal, FModelUsuario, TModelFacade.New.Usuario.Usuario.Metodos
+    (TModelFacade.New.Usuario.Tipos.UsuarioTipo(Self.Operacoes,
+    TUsuarioTipo.Gerente, FModelUsuario))));
 end;
 
 function TControllerUsuario.Gerente: iModelUsuarioMetodos;
 begin
-
+  Result := TModelFacade.New.Usuario.Usuario.Metodos
+    (TModelFacade.New.Usuario.Tipos.UsuarioTipo(Self.Operacoes,
+    TUsuarioTipo.Gerente, FModelUsuario));
 end;
 
 function TControllerUsuario.Metodos: iControllerUsuarioMetodos;

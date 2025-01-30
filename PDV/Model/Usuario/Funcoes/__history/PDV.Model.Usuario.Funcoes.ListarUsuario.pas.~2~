@@ -1,0 +1,41 @@
+unit PDV.Model.Usuario.Funcoes.ListarUsuario;
+
+interface
+
+uses
+  PDV.Model.Usuario.Funcoes.Interfaces;
+
+type
+
+  TModelUsuarioFuncoesListarUsuario = class(TInterfacedObject,
+    iModelUsuarioFuncoesListarUsuario)
+  private
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: iModelUsuarioFuncoesListarUsuario;
+  end;
+
+implementation
+
+{ TModelUsuarioFuncoesListarUsuario }
+
+constructor TModelUsuarioFuncoesListarUsuario.Create;
+begin
+
+end;
+
+destructor TModelUsuarioFuncoesListarUsuario.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelUsuarioFuncoesListarUsuario.New
+  : iModelUsuarioFuncoesListarUsuario;
+begin
+  Result := Self.Create;
+end;
+
+end.

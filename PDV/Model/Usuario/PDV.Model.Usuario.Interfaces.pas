@@ -3,7 +3,8 @@ unit PDV.Model.Usuario.Interfaces;
 interface
 
 uses
-  PDV.Controller.Usuario.Operacoes.Interfaces;
+  PDV.Controller.Usuario.Operacoes.Interfaces,
+  PDV.Model.Usuario.Funcoes.Interfaces;
 
 type
 
@@ -12,7 +13,7 @@ type
   iModelUsuario = interface
     ['{E712E7C7-929E-4CC3-BD55-DB3EE563012F}']
     function Metodos(Usuario: iModelUsuarioMetodos): iModelUsuarioMetodos;
-    //function Funcoes: imodelusuariofuncoes;
+    function Funcoes: iModelUsuarioFuncoes;
   end;
 
   iModelUsuarioMetodos = interface

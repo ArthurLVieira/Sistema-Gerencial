@@ -1,0 +1,7 @@
+unit PDV.Model.Caixa.Factory;
+
+interface
+
+implementation
+
+end.
